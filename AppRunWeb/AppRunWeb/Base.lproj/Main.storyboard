@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppRunWeb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WAC-OK-Cax">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTableViewCell" rowHeight="189" id="hds-Kv-I8l" customClass="CellTableViewCell" customModule="AppRunWeb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hds-Kv-I8l" id="n4T-s6-ynL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="188.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guI-bT-aDE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="188.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="guI-bT-aDE" secondAttribute="bottom" id="N4R-37-HiB"/>
+                                                <constraint firstItem="guI-bT-aDE" firstAttribute="leading" secondItem="n4T-s6-ynL" secondAttribute="leading" id="OjX-XF-JDQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="guI-bT-aDE" secondAttribute="trailing" id="bsM-ha-Kfq"/>
+                                                <constraint firstItem="guI-bT-aDE" firstAttribute="top" secondItem="n4T-s6-ynL" secondAttribute="top" id="zG8-SO-2T3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblchoose" destination="guI-bT-aDE" id="3jp-0q-8BF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WAC-OK-Cax" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="AlS-Q1-ugo"/>
+                            <constraint firstItem="WAC-OK-Cax" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="VEi-mJ-7cM"/>
+                            <constraint firstItem="WAC-OK-Cax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZL0-81-hSj"/>
+                            <constraint firstItem="WAC-OK-Cax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rte-8c-774"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblChoose" destination="WAC-OK-Cax" id="sos-r8-S7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
