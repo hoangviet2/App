@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9c6-cH-9iF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,54 +16,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WAC-OK-Cax">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTableViewCell" rowHeight="189" id="hds-Kv-I8l" customClass="CellTableViewCell" customModule="AppRunWeb" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="189"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hds-Kv-I8l" id="n4T-s6-ynL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="188.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guI-bT-aDE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="188.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="guI-bT-aDE" secondAttribute="bottom" id="N4R-37-HiB"/>
-                                                <constraint firstItem="guI-bT-aDE" firstAttribute="leading" secondItem="n4T-s6-ynL" secondAttribute="leading" id="OjX-XF-JDQ"/>
-                                                <constraint firstAttribute="trailing" secondItem="guI-bT-aDE" secondAttribute="trailing" id="bsM-ha-Kfq"/>
-                                                <constraint firstItem="guI-bT-aDE" firstAttribute="top" secondItem="n4T-s6-ynL" secondAttribute="top" id="zG8-SO-2T3"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblchoose" destination="guI-bT-aDE" id="3jp-0q-8BF"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="512-jg-PFN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="55.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ni0-1B-ZeP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMs-yK-P5G">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="55.5"/>
+                                                <state key="normal" image="arrow.left" catalog="system"/>
+                                                <connections>
+                                                    <action selector="btn_Back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOh-tK-Nln"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-Qn-Auu">
+                                                <rect key="frame" x="41.5" y="0.0" width="41.5" height="55.5"/>
+                                                <state key="normal" image="arrow.right" catalog="system"/>
+                                                <connections>
+                                                    <action selector="btn_Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jfz-Uk-hYP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-eE-ZEf">
+                                                <rect key="frame" x="83" y="0.0" width="41" height="55.5"/>
+                                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                                <connections>
+                                                    <action selector="btn_Reload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZO-Qj-G39"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-13-rNf">
+                                                <rect key="frame" x="124" y="0.0" width="248.5" height="55.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bDC-nZ-3Ih"/>
+                                                    <outlet property="pasteDelegate" destination="BYZ-38-t0r" id="Fc2-ST-Hr7"/>
+                                                    <outlet property="textDragDelegate" destination="BYZ-38-t0r" id="ASv-GJ-XpF"/>
+                                                    <outlet property="textDropDelegate" destination="BYZ-38-t0r" id="92c-Up-gNG"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvn-9v-79W">
+                                                <rect key="frame" x="372.5" y="0.0" width="41.5" height="55.5"/>
+                                                <state key="normal" title="Button" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="btn_Find:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEq-48-sma"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Fvn-9v-79W" firstAttribute="width" secondItem="Xho-13-rNf" secondAttribute="width" multiplier="1/6" id="2k1-CM-Fnn"/>
+                                            <constraint firstItem="J4x-Qn-Auu" firstAttribute="height" secondItem="ZMs-yK-P5G" secondAttribute="height" id="5zJ-tw-2do"/>
+                                            <constraint firstItem="Fvn-9v-79W" firstAttribute="height" secondItem="ZMs-yK-P5G" secondAttribute="height" id="Cot-BE-A5H"/>
+                                            <constraint firstItem="J4x-Qn-Auu" firstAttribute="width" secondItem="ZMs-yK-P5G" secondAttribute="width" id="ZhG-4X-I91"/>
+                                            <constraint firstItem="wWz-eE-ZEf" firstAttribute="width" secondItem="ZMs-yK-P5G" secondAttribute="width" id="nRe-gg-FOz"/>
+                                            <constraint firstItem="wWz-eE-ZEf" firstAttribute="height" secondItem="ZMs-yK-P5G" secondAttribute="height" id="ylw-1d-r0f"/>
+                                            <constraint firstItem="Fvn-9v-79W" firstAttribute="width" secondItem="ZMs-yK-P5G" secondAttribute="width" id="zLB-hH-RwC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ni0-1B-ZeP" firstAttribute="height" secondItem="512-jg-PFN" secondAttribute="height" id="4Ta-hD-UBd"/>
+                                    <constraint firstItem="ni0-1B-ZeP" firstAttribute="top" secondItem="512-jg-PFN" secondAttribute="top" id="QD9-BC-8rd"/>
+                                    <constraint firstItem="ni0-1B-ZeP" firstAttribute="width" secondItem="512-jg-PFN" secondAttribute="width" id="ZHI-X0-dbl"/>
+                                    <constraint firstItem="ni0-1B-ZeP" firstAttribute="leading" secondItem="512-jg-PFN" secondAttribute="leading" id="dU0-vn-Ppt"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRJ-Id-mGb">
+                                <rect key="frame" x="0.0" y="143.5" width="414" height="718.5"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WAC-OK-Cax" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="AlS-Q1-ugo"/>
-                            <constraint firstItem="WAC-OK-Cax" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="VEi-mJ-7cM"/>
-                            <constraint firstItem="WAC-OK-Cax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZL0-81-hSj"/>
-                            <constraint firstItem="WAC-OK-Cax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rte-8c-774"/>
+                            <constraint firstItem="512-jg-PFN" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="0Xb-tM-L9C"/>
+                            <constraint firstItem="512-jg-PFN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9xy-C8-Npf"/>
+                            <constraint firstItem="512-jg-PFN" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1/14" id="FYE-5f-JNJ"/>
+                            <constraint firstItem="vRJ-Id-mGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NYm-5W-rXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vRJ-Id-mGb" secondAttribute="bottom" id="iwD-pe-lWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vRJ-Id-mGb" secondAttribute="trailing" id="sbR-NS-pxE"/>
+                            <constraint firstItem="512-jg-PFN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wKa-qe-RS1"/>
+                            <constraint firstItem="vRJ-Id-mGb" firstAttribute="top" secondItem="512-jg-PFN" secondAttribute="bottom" id="yNg-17-zZW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="b64-Fh-o11"/>
                     <connections>
-                        <outlet property="tblChoose" destination="WAC-OK-Cax" id="sos-r8-S7A"/>
+                        <outlet property="btnBack" destination="ZMs-yK-P5G" id="ocZ-8j-0xO"/>
+                        <outlet property="btnFind" destination="Fvn-9v-79W" id="Zqg-66-2jk"/>
+                        <outlet property="btnNext" destination="J4x-Qn-Auu" id="kW8-Da-Omu"/>
+                        <outlet property="btnReload" destination="wWz-eE-ZEf" id="Uwn-Em-ZV2"/>
+                        <outlet property="txtHttp" destination="Xho-13-rNf" id="s3Y-mG-Tzt"/>
+                        <outlet property="webView" destination="vRJ-Id-mGb" id="Ih5-tX-Nvf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+            <point key="canvasLocation" x="2976.811594202899" y="14.732142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SsZ-5G-IA3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9c6-cH-9iF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wcd-Xo-Azt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ggG-ZI-lp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Csm-Cr-Tmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066.666666666667" y="14.732142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

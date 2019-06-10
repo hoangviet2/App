@@ -7,47 +7,91 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
-    let arrWeb = [[" vnexpress"],[" CNN"]]
-    let arrHead = ["viet nam","nuoc ngoai"]
+    var History:Array<String> = Array<String>()
+    var index:Int = 0
     
-    @IBOutlet weak var tblChoose: UITableView!
-
+    @IBOutlet weak var webView: WKWebView!
+    
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnReload: UIButton!
+    @IBOutlet weak var btnFind: UIButton!
+    
+    @IBOutlet weak var txtHttp: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblChoose.dataSource = self
-        tblChoose.delegate = self
         
     }
-}
-extension ViewController:UITableViewDelegate{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return arrWeb.count
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-}
-extension ViewController:UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrWeb[section].count
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return arrHead[section]
+    
+    @IBAction func btn_Find(_ sender: Any) {
+        print("btnFind")
+        if let url = URL(string: txtHttp.text!){
+            if var link = txtHttp.text{
+                if link.hasPrefix("http://WWW.") || link.hasPrefix("https://WWW.") || link.hasSuffix(".com"){
+                    let req = URLRequest(url: url)
+                    History.append(link)
+                    print(url)
+                    webView.load(req)
+                }
+                else{
+                    link = "https://\(link).com"
+                    if let url2 = URL(string: link){
+                        History.append(link)
+                        print(url2)
+                        let req = URLRequest(url: url2)
+                        webView.load(req)
+                        index = History.count - 1
+                    }
+                    
+                }
+            }
+
+        }
+        else{
+            if let alert:UIAlertController = UIAlertController(title: "Erro", message: "Wrong link", preferredStyle: .alert){
+                let btnOK:UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alert.addAction(btnOK)
+                present(alert, animated: true,completion: nil)
+            }
+        }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell") as! CellTableViewCell
-        cell.lblchoose.text = arrWeb[indexPath.section][indexPath.row]
-        return cell
+    @IBAction func btn_Back(_ sender: Any) {
+        if History.count > 0{
+            index = index - 1
+            if index < 0{
+                index = 0
+            }
+            if let urlH:URL = URL(string: History[index]){
+                if var req:URLRequest = URLRequest(url: urlH){
+                    webView.load(req)
+                }
+            }
+        }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let choosestorybroad = UIStoryboard(name: "ViewControllerChoose", bundle: nil)
-        let chooseviewcontroll = choosestorybroad.instantiateViewController(withIdentifier: "ViewControllerChoose") as! ViewControllerChoose
-        navigationController?.pushViewController(chooseviewcontroll, animated: true)
-    
+
+    @IBAction func btn_Next(_ sender: Any) {
+        if History.count > 0{
+            index = index + 1
+            if index > History.count - 1{
+                index = History.count - 1
+            }
+            if let urlN:URL = URL(string: History[index]){
+                if var req:URLRequest = URLRequest(url: urlN){
+                    webView.load(req)
+                }
+            }
+        }
     }
     
+    @IBAction func btn_Reload(_ sender: Any) {
+        webView.reload()
+    }
 }
+    
+
