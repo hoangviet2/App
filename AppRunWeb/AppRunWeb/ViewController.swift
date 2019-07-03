@@ -32,14 +32,17 @@ class ViewController: UIViewController {
         print("btnFind")
         if let url = URL(string: txtHttp.text!){
             if var link = txtHttp.text{
-                if link.hasPrefix("http://WWW.") || link.hasPrefix("https://WWW.") || link.hasSuffix(".com"){
-                    let req = URLRequest(url: url)
-                    History.append(link)
-                    print(url)
-                    webView.load(req)
+                if link.hasPrefix("http://WWW.") || link.hasPrefix("https://WWW."){
+                    if link.hasSuffix(".com") || link.hasSuffix(".net") || link.hasSuffix(".vn") || link.hasSuffix(".org"){
+                        let req = URLRequest(url: url)
+                        History.append(link)
+                        print(url)
+                        print(History)
+                        webView.load(req)
+                    }
                 }
                 else{
-                    link = "https://\(link).com"
+                    link = "https://WWW.\(link).com"
                     if let url2 = URL(string: link){
                         History.append(link)
                         print(url2)
