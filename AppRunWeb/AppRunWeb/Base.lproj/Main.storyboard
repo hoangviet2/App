@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9c6-cH-9iF">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9c6-cH-9iF">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,21 +26,21 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMs-yK-P5G">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.5" height="55.5"/>
-                                                <state key="normal" image="arrow.left" catalog="system"/>
+                                                <state key="normal" image="arrow.left"/>
                                                 <connections>
                                                     <action selector="btn_Back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOh-tK-Nln"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-Qn-Auu">
                                                 <rect key="frame" x="41.5" y="0.0" width="41.5" height="55.5"/>
-                                                <state key="normal" image="arrow.right" catalog="system"/>
+                                                <state key="normal" image="arrow.right"/>
                                                 <connections>
                                                     <action selector="btn_Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jfz-Uk-hYP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-eE-ZEf">
                                                 <rect key="frame" x="83" y="0.0" width="41" height="55.5"/>
-                                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                                <state key="normal" image="arrow.clockwise"/>
                                                 <connections>
                                                     <action selector="btn_Reload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZO-Qj-G39"/>
                                                 </connections>
@@ -46,7 +48,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-13-rNf">
                                                 <rect key="frame" x="124" y="0.0" width="248.5" height="55.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="URL" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="bDC-nZ-3Ih"/>
                                                     <outlet property="pasteDelegate" destination="BYZ-38-t0r" id="Fc2-ST-Hr7"/>
@@ -56,7 +58,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvn-9v-79W">
                                                 <rect key="frame" x="372.5" y="0.0" width="41.5" height="55.5"/>
-                                                <state key="normal" title="Button" image="magnifyingglass" catalog="system"/>
+                                                <state key="normal" title="Button" image="magnifyingglass"/>
                                                 <connections>
                                                     <action selector="btn_Find:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEq-48-sma"/>
                                                 </connections>
@@ -73,7 +75,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ni0-1B-ZeP" firstAttribute="height" secondItem="512-jg-PFN" secondAttribute="height" id="4Ta-hD-UBd"/>
                                     <constraint firstItem="ni0-1B-ZeP" firstAttribute="top" secondItem="512-jg-PFN" secondAttribute="top" id="QD9-BC-8rd"/>
@@ -137,9 +139,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="arrow.right" catalog="system" width="64" height="48"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+        <image name="arrow.clockwise" width="56" height="64"/>
+        <image name="arrow.left" width="64" height="48"/>
+        <image name="arrow.right" width="64" height="48"/>
+        <image name="magnifyingglass" width="64" height="60"/>
     </resources>
 </document>

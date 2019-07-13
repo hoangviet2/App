@@ -9,22 +9,39 @@
 import UIKit
 
 class SigninViewController: UIViewController {
-
+    //varibles
+    
+    
+    //Outlet varibles
+    @IBOutlet weak var txtEmailLogin: UITextField!
+    @IBOutlet weak var txtPasswordLogin: UITextField!
+    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var lblSignin: UILabel!
+    @IBOutlet weak var btnForgotpass: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //Action Varibles
+    @IBAction func btn_Signin(_ sender: Any) {
+        if txtEmailLogin.text!.isEmpty == true || txtPasswordLogin.text!.isEmpty == true{
+            print("erro")
+        }
     }
-    */
-
+    
+}
+extension SigninViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if textField == txtEmailLogin {
+            print("text login")
+        }
+        if textField == txtPasswordLogin {
+            print("text pass")
+        }
+        return true
+    }
 }

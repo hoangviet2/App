@@ -9,22 +9,50 @@
 import UIKit
 
 class SignupViewController: UIViewController {
-
+    //Varibles
+    
+    //Outlet varibles
+    @IBOutlet weak var txtFullname: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //Action varibles
+    @IBAction func btn_SwitchSignin(_ sender: Any) {
+        if let vc = Utils.viewController(storyboardId: SigninViewController.className, storyboardName: SigninViewController.className) as? SigninViewController{
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
-    */
+    
+    @IBAction func btn_Terms(_ sender: Any) {
+    
+    }
+    
+    @IBAction func btn_CreateAccount(_ sender: Any) {
+        if txtEmail.text?.isEmpty == true || txtPassword.text?.isEmpty == true || txtFullname.text?.isEmpty == true{
+            print("erro")
+        }
+    }
+    
 
+}
+extension SignupViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if textField == txtFullname{
+            print(txtFullname.text as! String)
+        }
+        if textField == txtEmail{
+            print(txtEmail.text as! String)
+        }
+        if textField == txtPassword{
+            print(txtPassword.text as! String)
+        }
+        return true
+    }
 }
