@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SigninViewController: UIViewController {
     //varibles
@@ -29,6 +30,14 @@ class SigninViewController: UIViewController {
     @IBAction func btn_Signin(_ sender: Any) {
         if txtEmailLogin.text!.isEmpty == true || txtPasswordLogin.text!.isEmpty == true{
             print("erro")
+        }else{
+            Auth.auth().signIn(withEmail: txtEmailLogin.text!, password: txtPasswordLogin.text!) { [weak self] user, error in
+                if let user = user{
+                    print("Success")
+                }else{
+                    print("fail")
+                }
+            }
         }
     }
     

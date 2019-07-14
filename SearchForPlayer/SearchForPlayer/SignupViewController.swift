@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupViewController: UIViewController {
-    //Varibles
     
     //Outlet varibles
     @IBOutlet weak var txtFullname: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    
+    //varibles
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,14 @@ class SignupViewController: UIViewController {
     @IBAction func btn_CreateAccount(_ sender: Any) {
         if txtEmail.text?.isEmpty == true || txtPassword.text?.isEmpty == true || txtFullname.text?.isEmpty == true{
             print("erro")
+        }else{
+            Auth.auth().createUser(withEmail: txtEmail.text!, password: txtPassword.text!) { authResult, error in
+                if let users = authResult {
+                    print("create success")
+                }else{
+                    print("create fail")
+                }
+            }
         }
     }
     
