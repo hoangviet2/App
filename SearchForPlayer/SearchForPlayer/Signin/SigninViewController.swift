@@ -24,6 +24,8 @@ class SigninViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        print("class SigninViewController")
     }
     
     //Action Varibles
@@ -33,9 +35,17 @@ class SigninViewController: UIViewController {
         }else{
             Auth.auth().signIn(withEmail: txtEmailLogin.text!, password: txtPasswordLogin.text!) { [weak self] user, error in
                 if let user = user{
-                    print("Success")
+//                    if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
+//                        self?.navigationController?.pushViewController(vc, animated: true)
+//                    }
+                    NotificationCenter.default.post(name: NSNotification.Name("Login_Success"), object: nil)
+                   self?.navigationController?.popToRootViewController(animated: true)
                 }else{
-                    print("fail")
+                    if let alert:UIAlertController = UIAlertController(title: "Warning", message: "Wrong account", preferredStyle: .alert){
+                        let alertact = UIAlertAction(title: "back", style: .cancel, handler: nil)
+                        alert.addAction(alertact)
+                        self!.present(alert,animated: true,completion: nil)
+                    }
                 }
             }
         }

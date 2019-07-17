@@ -9,13 +9,26 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var lblWelcome: UILabel!
     @IBOutlet weak var lblMessage: UILabel!
     @IBOutlet weak var btnSignin: UIButton!
     @IBOutlet weak var lblSignup: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+//            if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
+//                navigationController?.pushViewController(vc, animated: true)
+//            }
+            // ...
+        } else {
+            // No user is signed in.
+            
+            // ...
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +39,7 @@ class ViewController: UIViewController {
         print("press Signup")
         if let vc = Utils.viewController(storyboardId: SignupViewController.className, storyboardName: SignupViewController.className) as? SignupViewController{
             print("\(SignupViewController.className)")
-            navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(vc, animated: true)
             
         }
     }
@@ -34,8 +47,7 @@ class ViewController: UIViewController {
         print("press Signin")
         if let vc = Utils.viewController(storyboardId: SigninViewController.className, storyboardName: SigninViewController.className) as? SigninViewController{
             print("\(SigninViewController.className)")
-            navigationController?.pushViewController(vc, animated: true)
-            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

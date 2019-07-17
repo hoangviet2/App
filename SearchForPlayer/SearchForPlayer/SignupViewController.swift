@@ -43,7 +43,14 @@ class SignupViewController: UIViewController {
         }else{
             Auth.auth().createUser(withEmail: txtEmail.text!, password: txtPassword.text!) { authResult, error in
                 if let users = authResult {
-                    print("create success")
+                    if Auth.auth().currentUser?.isEmailVerified == true {
+                        if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                    }else{
+                        Auth.auth().currentUser?.sendEmailVerification { (error) in
+                        }
+                    }
                 }else{
                     print("create fail")
                 }
