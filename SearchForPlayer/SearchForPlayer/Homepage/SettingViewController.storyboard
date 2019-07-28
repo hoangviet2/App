@@ -18,22 +18,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-K2-LFQ">
-                                <rect key="frame" x="181" y="433" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log out"/>
-                                <connections>
-                                    <action selector="btn_Logout:" destination="Lc8-3D-w51" eventType="touchUpInside" id="S9H-Vj-9oW"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VmO-Ya-Xmn">
+                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SettingTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingTableViewCell" rowHeight="249" id="He1-MH-eb4" customClass="SettingTableViewCell" customModule="SearchForPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="249"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="He1-MH-eb4" id="JyH-CN-ZEp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="248.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="972-kx-Fm1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="248.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="972-kx-Fm1" secondAttribute="trailing" id="LYO-pM-1AM"/>
+                                                <constraint firstItem="972-kx-Fm1" firstAttribute="leading" secondItem="JyH-CN-ZEp" secondAttribute="leading" id="WYp-y9-NSL"/>
+                                                <constraint firstAttribute="bottom" secondItem="972-kx-Fm1" secondAttribute="bottom" id="cne-kk-uWF"/>
+                                                <constraint firstItem="972-kx-Fm1" firstAttribute="top" secondItem="JyH-CN-ZEp" secondAttribute="top" id="lGC-JM-mri"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="972-kx-Fm1" id="zgB-4R-JVc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KDk-dM-75J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travelr_avatar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Eyz-xk-8mk">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="O1f-7e-Dxg"/>
+                                            <constraint firstAttribute="height" constant="120" id="ahk-yC-Anv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yth-TP-5x8">
+                                        <rect key="frame" x="128" y="0.0" width="286" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Eyz-xk-8mk" firstAttribute="leading" secondItem="KDk-dM-75J" secondAttribute="leading" id="2Cy-MI-jUp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eyz-xk-8mk" secondAttribute="bottom" id="8x1-qX-58R"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yth-TP-5x8" secondAttribute="bottom" id="9EB-0S-V5V"/>
+                                    <constraint firstItem="Yth-TP-5x8" firstAttribute="top" secondItem="KDk-dM-75J" secondAttribute="top" id="AWk-U4-K6P"/>
+                                    <constraint firstItem="Eyz-xk-8mk" firstAttribute="top" secondItem="KDk-dM-75J" secondAttribute="top" id="e7K-gs-zLw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yth-TP-5x8" secondAttribute="trailing" id="h2a-fD-3LF"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.4724426565" green="1" blue="0.40910339499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KDk-dM-75J" firstAttribute="trailing" secondItem="vok-Dy-VaD" secondAttribute="trailing" id="1F3-53-Vpl"/>
+                            <constraint firstItem="vok-Dy-VaD" firstAttribute="trailing" secondItem="VmO-Ya-Xmn" secondAttribute="trailing" id="BtZ-re-O8a"/>
+                            <constraint firstItem="KDk-dM-75J" firstAttribute="top" secondItem="vok-Dy-VaD" secondAttribute="top" id="GC4-Ne-aTK"/>
+                            <constraint firstItem="VmO-Ya-Xmn" firstAttribute="leading" secondItem="vok-Dy-VaD" secondAttribute="leading" id="HrS-Su-GN1"/>
+                            <constraint firstItem="vok-Dy-VaD" firstAttribute="bottom" secondItem="VmO-Ya-Xmn" secondAttribute="bottom" id="dwq-KK-ul8"/>
+                            <constraint firstItem="KDk-dM-75J" firstAttribute="leading" secondItem="vok-Dy-VaD" secondAttribute="leading" id="f8f-7A-lOV"/>
+                            <constraint firstItem="VmO-Ya-Xmn" firstAttribute="top" secondItem="KDk-dM-75J" secondAttribute="bottom" id="lUO-Q9-WpQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vok-Dy-VaD"/>
                     </view>
+                    <connections>
+                        <outlet property="imgProfile" destination="Eyz-xk-8mk" id="yQC-Hb-jRL"/>
+                        <outlet property="lblProfile" destination="Yth-TP-5x8" id="wGk-WT-ZC2"/>
+                        <outlet property="settingtableview" destination="VmO-Ya-Xmn" id="d5R-06-QEk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27P-to-hj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="-29"/>
+            <point key="canvasLocation" x="40.579710144927539" y="-29.464285714285712"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="travelr_avatar_icon" width="100" height="100"/>
+    </resources>
 </document>

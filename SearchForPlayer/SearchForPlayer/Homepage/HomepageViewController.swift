@@ -19,6 +19,7 @@ class HomepageViewController: UIViewController {
         super.viewDidLoad()
         homepagetableview.delegate = self
         homepagetableview.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -42,7 +43,18 @@ extension HomepageViewController:UITableViewDelegate{
         let height = homepagetableview.frame.size.height / CGFloat(arrtitle.count)
         return height
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            if let vc = Utils.viewController(storyboardId: LookingtoplayViewController.className, storyboardName: LookingtoplayViewController.className){
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        default:
+            print("Erro")
+        }
+    }
 }
+
 extension HomepageViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrtitle.count

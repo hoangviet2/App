@@ -153,13 +153,27 @@
                                     <constraint firstItem="0pR-Xr-YdT" firstAttribute="leading" secondItem="82a-Ke-XIB" secondAttribute="leading" id="q8A-YP-drb"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wao-zt-ddb">
+                                <rect key="frame" x="370" y="282.5" width="44" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="crO-qa-bhS"/>
+                                </constraints>
+                                <state key="normal" image="cm_icon_input_gray_eye_normal"/>
+                                <state key="selected" image="cm_icon_input_red_eye_selected"/>
+                                <connections>
+                                    <action selector="btn_Seepass:" destination="PNl-mr-vn9" eventType="touchUpInside" id="tgy-UG-ffd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wao-zt-ddb" firstAttribute="top" secondItem="3ee-Zd-f5W" secondAttribute="top" id="2ct-Sy-i13"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="trailing" secondItem="LF3-BA-mCA" secondAttribute="trailing" id="ECi-OC-1LK"/>
+                            <constraint firstItem="Wao-zt-ddb" firstAttribute="trailing" secondItem="3ee-Zd-f5W" secondAttribute="trailing" id="Fao-sc-v9i"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="top" secondItem="LF3-BA-mCA" secondAttribute="top" id="H1P-Pk-29f"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="trailing" secondItem="LF3-BA-mCA" secondAttribute="trailing" id="HYU-DB-px5"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="leading" secondItem="LF3-BA-mCA" secondAttribute="leading" id="JxS-nV-ACr"/>
+                            <constraint firstItem="Wao-zt-ddb" firstAttribute="bottom" secondItem="3ee-Zd-f5W" secondAttribute="bottom" id="NgX-Gf-JfH"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="leading" secondItem="LF3-BA-mCA" secondAttribute="leading" id="dE6-2L-KJZ"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="trailing" secondItem="LF3-BA-mCA" secondAttribute="trailing" id="wQd-v5-ydB"/>
                             <constraint firstItem="82a-Ke-XIB" firstAttribute="leading" secondItem="LF3-BA-mCA" secondAttribute="leading" id="wZf-aT-6Lz"/>
@@ -168,6 +182,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CuR-B9-jUk"/>
                     <connections>
+                        <outlet property="btnSeepass" destination="Wao-zt-ddb" id="UZ5-kV-mTQ"/>
                         <outlet property="txtEmail" destination="Jbl-HV-130" id="d7Y-yW-ulm"/>
                         <outlet property="txtFullname" destination="n51-2X-zAt" id="J0n-ml-6ZM"/>
                         <outlet property="txtPassword" destination="3ee-Zd-f5W" id="E9W-hQ-QD7"/>
@@ -178,4 +193,8 @@
             <point key="canvasLocation" x="2020.289855072464" y="38.839285714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cm_icon_input_gray_eye_normal" width="18" height="13"/>
+        <image name="cm_icon_input_red_eye_selected" width="18" height="13"/>
+    </resources>
 </document>

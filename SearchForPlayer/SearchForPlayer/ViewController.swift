@@ -17,17 +17,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var lblSignup: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
-        if Auth.auth().currentUser != nil {
-            // User is signed in.
-//            if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
-//                navigationController?.pushViewController(vc, animated: true)
-//            }
-            // ...
-        } else {
-            // No user is signed in.
-            
-            // ...
-        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

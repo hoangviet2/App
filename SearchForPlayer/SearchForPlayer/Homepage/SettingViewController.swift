@@ -11,24 +11,32 @@ import Firebase
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var imgProfile: UIImageView!
+    @IBOutlet weak var lblProfile: UILabel!
+    @IBOutlet weak var settingtableview: UITableView!
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2
+        if let vc = Utils.viewController(storyboardId: SignupViewController.className, storyboardName: SignupViewController.className) as? SignupViewController{
+//            if vc.txtFullname.text != nil{
+//                vc.txtFullname.text = lblProfile.text
+//            }else{
+//                print("nil")
+//            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        settingtableview.delegate = self
+        settingtableview.dataSource = self
+//        settingtableview.dataSource = self
         // Do any additional setup after loading the view.
     }
     
 
-    @IBAction func btn_Logout(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-            NotificationCenter.default.post(name: NSNotification.Name("Logout_Success"), object: nil)
-            self.tabBarController?.selectedIndex = 0
-            self.navigationController?.popToRootViewController(animated: true)
-        }
-        catch {
-            
-        }
-    }
     /*
     // MARK: - Navigation
 
@@ -38,5 +46,36 @@ class SettingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+extension SettingViewController:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            do {
+                try Auth.auth().signOut()
+                //            NotificationCenter.default.post(name: NSNotification.Name("Logout_Success"), object: nil)
+                //            self.tabBarController?.selectedIndex = 0
+                //            //self.navigationController?.popToRootViewController(animated: false)
+                AppDelegate.share().setWelcome()
+                
+            }
+            catch {
+                
+            }
+        }
+    }
+}
+extension SettingViewController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:SettingTableViewCell = settingtableview.dequeueReusableCell(withIdentifier: SettingTableViewCell.className) as! SettingTableViewCell
+            cell.lblTitle.text = "Logout"
+            return cell
+        
+    }
+
 
 }

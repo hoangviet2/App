@@ -13,19 +13,15 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    static func share()->AppDelegate{
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-//        if Auth.auth().currentUser != nil {
-//            if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
-//
-//            }
-//        } else {
-//            print("not hellooo")
-//            // No user is signed in.
-//            // ...
-//        }
+        checkuser()
+        
         // Override point for customization after application launch.
         return true
     }
@@ -51,9 +47,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
-
+    
+    
+}
+extension AppDelegate {
+    
+    func checkuser() -> Bool {
+        if Auth.auth().currentUser != nil{
+            setupHomeTabBar()
+            if Auth.auth().currentUser?.isEmailVerified == false {
+                Auth.auth().currentUser?.sendEmailVerification { (error) in
+                }
+            }
+            return true
+        }
+        else {
+            setWelcome()
+        }
+        return false
+    }
+    func setupHomeTabBar() {
+        if let vc = Utils.viewController(storyboardId: TabBarController.className, storyboardName: "Main") as? TabBarController{
+            let mainNavigation = UINavigationController.init(rootViewController: vc)
+            mainNavigation.isNavigationBarHidden = true
+            window?.rootViewController = mainNavigation
+            //window?.rootViewController = vc
+        }
+    }
+    func setWelcome() {
+        if let vc = Utils.viewController(storyboardId: WelcomeViewController.className, storyboardName: "Main") as? WelcomeViewController {
+            let mainNavigation = UINavigationController.init(rootViewController: vc)
+            mainNavigation.isNavigationBarHidden = true
+            window?.rootViewController = mainNavigation
+            //window?.rootViewController = vc
+        }
+    }
 }
 extension NSObject {
     var className: String {

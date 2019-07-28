@@ -34,37 +34,30 @@ class TabBarController: UITabBarController {
         }
     }
     override func viewDidAppear(_ animated: Bool) {
-        if self.checkUser() {
-            
-        }
-        else {
-            self.welcome()
-        }
+//        if AppDelegate.instanceMethod(for: Selector!).checkuser(AppDelegate){
+//
+//        }
+//        else {
+//            self.welcome()
+//        }
+//        let delegate = UIApplication.shared.delegate as! AppDelegate
+//        if delegate.checkuser(){
+//
+//        }else{
+//            self.welcome()
+//        }
     }
     func welcome() {
         if let vc = Utils.viewController(storyboardId: WelcomeViewController.className, storyboardName: "Main") as? WelcomeViewController{
             print("Welcome")
             let nav: UINavigationController = UINavigationController(rootViewController: vc)
-            self.present(nav, animated: true, completion: {
+            self.present(nav, animated: false, completion: {
                 print("go on welcome")
             })
         }
     }
 
-    func checkUser() -> Bool {
-//
-//        do {
-//            try Auth.auth().signOut()
-//        }
-//        catch {
-//
-//        }
-        if let email = Auth.auth().currentUser?.email, email.count > 0 {
-            print("user email: \(email)")
-            return true
-        }
-        return false
-    }
+    
     /*
     // MARK: - Navigation
 

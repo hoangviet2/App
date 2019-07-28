@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BudgetTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BudgetTableViewCell" rowHeight="119" id="KGk-i7-Jjw" customClass="BudgetTableViewCell" customModule="SearchForPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ESx-oA-HVJ">
+                        <rect key="frame" x="16" y="8" width="343" height="102.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-a3-h0M">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ecy-zz-QSp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Budget">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_PressBudget:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cnf-5Z-pZA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpH-RW-ffn">
+                                <rect key="frame" x="0.0" y="44" width="343" height="58.5"/>
+                                <string key="text">How much you want each separe player to pay example is the field is 100 the hour, you are missing two and want them to pay equally it willl be $10</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ESx-oA-HVJ" secondAttribute="trailing" constant="16" id="1f9-LC-5UM"/>
+                    <constraint firstItem="ESx-oA-HVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3MC-ve-il7"/>
+                    <constraint firstItem="ESx-oA-HVJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hSQ-ga-Wef"/>
+                    <constraint firstAttribute="bottom" secondItem="ESx-oA-HVJ" secondAttribute="bottom" constant="8" id="nbg-Xh-yQn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnTitle" destination="8eD-a3-h0M" id="WBn-Vv-Uez"/>
+                <outlet property="lblDecription" destination="wpH-RW-ffn" id="c6w-q7-lC4"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="19.754464285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

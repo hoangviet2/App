@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rJ8-mh-CcB">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forgotpass View Controller-->
+        <scene sceneID="Eb0-mi-DTn">
+            <objects>
+                <viewController storyboardIdentifier="ForgotpassViewController" id="rJ8-mh-CcB" customClass="ForgotpassViewController" customModule="SearchForPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fhy-ug-duy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-rK-4ep">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-KN-A8T">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Znk-X7-zk8"/>
+                                        </constraints>
+                                        <state key="normal" image="travelr_calendar_left_arrow"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATG-YD-gK5">
+                                        <rect key="frame" x="44" y="0.0" width="326" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSK-1r-ntb">
+                                        <rect key="frame" x="370" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="nHm-Bo-ozK"/>
+                                        </constraints>
+                                        <state key="normal" image="travelr_activity_mail"/>
+                                        <state key="selected" image="travelr_check_mark_icon"/>
+                                        <connections>
+                                            <action selector="btn_SendResetEmail:" destination="rJ8-mh-CcB" eventType="touchUpInside" id="rVh-UQ-LDq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8Ff-KN-A8T" secondAttribute="bottom" id="24n-mA-jzX"/>
+                                    <constraint firstItem="8Ff-KN-A8T" firstAttribute="leading" secondItem="nl0-rK-4ep" secondAttribute="leading" id="LNi-tz-AKg"/>
+                                    <constraint firstItem="bSK-1r-ntb" firstAttribute="top" secondItem="nl0-rK-4ep" secondAttribute="top" id="VC3-Ar-ff0"/>
+                                    <constraint firstItem="8Ff-KN-A8T" firstAttribute="top" secondItem="nl0-rK-4ep" secondAttribute="top" id="ZOM-9p-36p"/>
+                                    <constraint firstAttribute="height" constant="44" id="eoG-zk-IyT"/>
+                                    <constraint firstAttribute="bottom" secondItem="bSK-1r-ntb" secondAttribute="bottom" id="lWh-3T-b1d"/>
+                                    <constraint firstAttribute="trailing" secondItem="bSK-1r-ntb" secondAttribute="trailing" id="vJE-pq-UGx"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g1q-8k-qfp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNz-vY-Gfd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NNz-vY-Gfd" firstAttribute="top" secondItem="g1q-8k-qfp" secondAttribute="top" id="2eS-D4-RfX"/>
+                                    <constraint firstAttribute="trailing" secondItem="NNz-vY-Gfd" secondAttribute="trailing" id="OVe-PV-m8j"/>
+                                    <constraint firstAttribute="bottom" secondItem="NNz-vY-Gfd" secondAttribute="bottom" id="eZK-jc-hUE"/>
+                                    <constraint firstAttribute="height" constant="50" id="pCG-ib-l4P"/>
+                                    <constraint firstItem="NNz-vY-Gfd" firstAttribute="leading" secondItem="g1q-8k-qfp" secondAttribute="leading" id="vd3-eW-ccT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g1q-8k-qfp" firstAttribute="leading" secondItem="Qkm-Hd-9df" secondAttribute="leading" id="Ykp-a3-OK3"/>
+                            <constraint firstItem="nl0-rK-4ep" firstAttribute="top" secondItem="Qkm-Hd-9df" secondAttribute="top" id="ey5-wE-VwL"/>
+                            <constraint firstItem="nl0-rK-4ep" firstAttribute="leading" secondItem="Qkm-Hd-9df" secondAttribute="leading" id="lBd-zQ-A6m"/>
+                            <constraint firstItem="Qkm-Hd-9df" firstAttribute="trailing" secondItem="nl0-rK-4ep" secondAttribute="trailing" id="n5J-Of-Hvr"/>
+                            <constraint firstItem="g1q-8k-qfp" firstAttribute="top" secondItem="nl0-rK-4ep" secondAttribute="bottom" id="yaw-mv-Pyz"/>
+                            <constraint firstItem="g1q-8k-qfp" firstAttribute="trailing" secondItem="Qkm-Hd-9df" secondAttribute="trailing" id="zci-OI-yQk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qkm-Hd-9df"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="8Ff-KN-A8T" id="s3q-8x-j6R"/>
+                        <outlet property="btnCheck" destination="bSK-1r-ntb" id="zsT-vt-y7y"/>
+                        <outlet property="txtEmail" destination="NNz-vY-Gfd" id="rkt-yj-9bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ3-ov-nSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="travelr_activity_mail" width="10" height="6.5"/>
+        <image name="travelr_calendar_left_arrow" width="10" height="16"/>
+        <image name="travelr_check_mark_icon" width="150" height="114.5"/>
+    </resources>
+</document>

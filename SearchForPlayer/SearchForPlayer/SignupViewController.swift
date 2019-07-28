@@ -15,10 +15,11 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var txtFullname: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnSeepass: UIButton!
     
     //varibles
 
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,20 +38,26 @@ class SignupViewController: UIViewController {
     
     }
     
+    @IBAction func btn_Seepass(_ sender: Any) {
+        if btnSeepass.isSelected == false {
+            btnSeepass.isSelected == true
+        }else{
+            btnSeepass.isSelected == false
+        }
+    }
+    
     @IBAction func btn_CreateAccount(_ sender: Any) {
         if txtEmail.text?.isEmpty == true || txtPassword.text?.isEmpty == true || txtFullname.text?.isEmpty == true{
             print("erro")
         }else{
             Auth.auth().createUser(withEmail: txtEmail.text!, password: txtPassword.text!) { authResult, error in
-                if let users = authResult {
-                    if Auth.auth().currentUser?.isEmailVerified == true {
-                        if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
-                            self.navigationController?.pushViewController(vc, animated: true)
-                        }
-                    }else{
+                if authResult != nil {
+                    if Auth.auth().currentUser?.isEmailVerified == false {
                         Auth.auth().currentUser?.sendEmailVerification { (error) in
                         }
                     }
+                    AppDelegate.share().setupHomeTabBar()
+                    
                 }else{
                     print("create fail")
                 }

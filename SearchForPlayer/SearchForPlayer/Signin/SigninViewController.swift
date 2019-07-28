@@ -19,6 +19,7 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var lblSignin: UILabel!
     @IBOutlet weak var btnForgotpass: UIButton!
+    @IBOutlet weak var btnSeepass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +36,11 @@ class SigninViewController: UIViewController {
         }else{
             Auth.auth().signIn(withEmail: txtEmailLogin.text!, password: txtPasswordLogin.text!) { [weak self] user, error in
                 if let user = user{
-//                    if let vc = Utils.viewController(storyboardId: HomepageViewController.className, storyboardName: HomepageViewController.className) as? HomepageViewController{
-//                        self?.navigationController?.pushViewController(vc, animated: true)
-//                    }
-                    NotificationCenter.default.post(name: NSNotification.Name("Login_Success"), object: nil)
-                   self?.navigationController?.popToRootViewController(animated: true)
+                    AppDelegate.share().setupHomeTabBar()
+                    
                 }else{
-                    if let alert:UIAlertController = UIAlertController(title: "Warning", message: "Wrong account", preferredStyle: .alert){
-                        let alertact = UIAlertAction(title: "back", style: .cancel, handler: nil)
+                    if let alert:UIAlertController = UIAlertController(title: "Account anounment", message: "Wrong account or password", preferredStyle: .alert){
+                        let alertact = UIAlertAction(title: "Retry", style: .cancel, handler: nil)
                         alert.addAction(alertact)
                         self!.present(alert,animated: true,completion: nil)
                     }
@@ -51,6 +49,29 @@ class SigninViewController: UIViewController {
         }
     }
     
+    @IBAction func btn_Forgotpass(_ sender: Any) {
+        if let vc = Utils.viewController(storyboardId: ForgotpassViewController.className, storyboardName: ForgotpassViewController.className) as? ForgotpassViewController{
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @IBAction func btn_Seepass(_ sender: Any) {
+        if btnSeepass.isSelected == false{
+            btnSeepass.isSelected = true
+            Seepass()
+        }else{
+            btnSeepass.isSelected = false
+            Seepass()
+        }
+    }
+    
+    func Seepass() {
+        if btnSeepass.isSelected == true{
+            txtPasswordLogin.isSecureTextEntry = false
+        }else{
+            txtPasswordLogin.isSecureTextEntry = true
+        }
+    }
 }
 extension SigninViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
