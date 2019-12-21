@@ -26,10 +26,15 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-IG-TTd">
                                         <rect key="frame" x="152" y="10" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.4724426565" green="1" blue="0.40910339499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ct0-IG-TTd" secondAttribute="height" multiplier="1:1" id="dIC-n6-xLv"/>
                                             <constraint firstAttribute="height" constant="100" id="zgy-Zp-VRE"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mdk-iq-dcb" appends="YES" id="W4b-vv-zrr"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,5 +72,10 @@
             </connections>
             <point key="canvasLocation" x="192.75362318840581" y="57.254464285714285"/>
         </tableViewCell>
+        <tapGestureRecognizer id="mdk-iq-dcb">
+            <connections>
+                <action selector="img_PressAvatar:" destination="KGk-i7-Jjw" id="k4Z-GD-L4S"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

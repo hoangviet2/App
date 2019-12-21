@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAu-2s-gV7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Whattime View Controller-->
+        <scene sceneID="ceA-rY-D3o">
+            <objects>
+                <viewController storyboardIdentifier="WhattimeViewController" id="GAu-2s-gV7" customClass="WhattimeViewController" customModule="SearchForPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nva-FY-cPD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neV-qo-buz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwq-1d-acv">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxO-SQ-wM9">
+                                                <rect key="frame" x="0.0" y="8" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="RGa-kb-CE9"/>
+                                                    <constraint firstAttribute="width" constant="44" id="tyA-t8-Nvn"/>
+                                                </constraints>
+                                                <state key="normal" image="travelr_calendar_left_arrow"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBA-tV-mOY">
+                                                <rect key="frame" x="48" y="30" width="318" height="0.0"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="eBA-tV-mOY" firstAttribute="centerY" secondItem="Lwq-1d-acv" secondAttribute="centerY" id="51a-X8-8gP"/>
+                                            <constraint firstItem="eBA-tV-mOY" firstAttribute="centerX" secondItem="Lwq-1d-acv" secondAttribute="centerX" id="Io8-Mr-Ah9"/>
+                                            <constraint firstAttribute="height" constant="60" id="XmL-u3-2M8"/>
+                                            <constraint firstItem="eBA-tV-mOY" firstAttribute="leading" secondItem="Lwq-1d-acv" secondAttribute="leading" constant="48" id="noG-XY-cJv"/>
+                                            <constraint firstItem="RxO-SQ-wM9" firstAttribute="leading" secondItem="Lwq-1d-acv" secondAttribute="leading" id="vG7-ZX-k7g"/>
+                                            <constraint firstItem="RxO-SQ-wM9" firstAttribute="centerY" secondItem="Lwq-1d-acv" secondAttribute="centerY" id="we1-2v-T0S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Lwq-1d-acv" secondAttribute="bottom" id="hBz-wL-amd"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-18-4kN">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lwq-1d-acv" firstAttribute="leading" secondItem="Lpf-Rk-X38" secondAttribute="leading" id="0JA-WR-dIs"/>
+                            <constraint firstItem="ccu-18-4kN" firstAttribute="top" secondItem="neV-qo-buz" secondAttribute="bottom" id="LBR-Kz-dEf"/>
+                            <constraint firstItem="neV-qo-buz" firstAttribute="leading" secondItem="Lpf-Rk-X38" secondAttribute="leading" id="M9j-lQ-BVW"/>
+                            <constraint firstItem="ccu-18-4kN" firstAttribute="leading" secondItem="Lpf-Rk-X38" secondAttribute="leading" id="O61-OR-6xb"/>
+                            <constraint firstItem="neV-qo-buz" firstAttribute="top" secondItem="Nva-FY-cPD" secondAttribute="top" id="TDm-vr-xY2"/>
+                            <constraint firstItem="Lwq-1d-acv" firstAttribute="trailing" secondItem="Lpf-Rk-X38" secondAttribute="trailing" id="biB-fz-aOa"/>
+                            <constraint firstItem="ccu-18-4kN" firstAttribute="trailing" secondItem="Lpf-Rk-X38" secondAttribute="trailing" id="oBv-Ms-nwO"/>
+                            <constraint firstItem="ccu-18-4kN" firstAttribute="bottom" secondItem="Lpf-Rk-X38" secondAttribute="bottom" id="rNC-nq-PC8"/>
+                            <constraint firstItem="Lwq-1d-acv" firstAttribute="top" secondItem="Lpf-Rk-X38" secondAttribute="top" id="tje-CT-tS8"/>
+                            <constraint firstItem="neV-qo-buz" firstAttribute="trailing" secondItem="Lpf-Rk-X38" secondAttribute="trailing" id="zlH-Pb-k0d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lpf-Rk-X38"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitlepage" destination="eBA-tV-mOY" id="3ew-Bm-qGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsY-Id-Nat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="travelr_calendar_left_arrow" width="10" height="16"/>
+    </resources>
+</document>

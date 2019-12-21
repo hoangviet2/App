@@ -21,11 +21,22 @@ class ForgotpassViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btn_SendResetEmail(_ sender: Any) {
-        if txtEmail.text?.isEmpty == true{
-            let name = Auth.auth().currentUser?.displayName
-            print(name)
-            Auth.auth().sendPasswordReset(withEmail: txtEmail.text!) { error in
-                // ...
+        if let Email = txtEmail.text , Email.count > 0{
+            if Email.count == 0{
+                ProgressHUD.showError("Please type your Email")
+            }else{
+                if (Email.contains("@")){
+                    AppDelegate.share().sendPasswordReset(email: Email) { (Erro) in
+                        if Erro.count > 0{
+                            ProgressHUD.showError(Erro)
+                        }else{
+                            ProgressHUD.showSuccess("Email reset has been send to Email: \(Email)")
+                        }
+                    }
+                }
+                else{
+                    ProgressHUD.showError("Erro email Type")
+                }
             }
         }
         

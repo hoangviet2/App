@@ -19,11 +19,8 @@ class SettingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2
         if let vc = Utils.viewController(storyboardId: SignupViewController.className, storyboardName: SignupViewController.className) as? SignupViewController{
-//            if vc.txtFullname.text != nil{
-//                vc.txtFullname.text = lblProfile.text
-//            }else{
-//                print("nil")
-//            }
+            let name = Auth.auth().currentUser?.displayName
+            lblProfile.text = name
         }
     }
     
@@ -53,9 +50,6 @@ extension SettingViewController:UITableViewDelegate{
         if indexPath.row == 0{
             do {
                 try Auth.auth().signOut()
-                //            NotificationCenter.default.post(name: NSNotification.Name("Logout_Success"), object: nil)
-                //            self.tabBarController?.selectedIndex = 0
-                //            //self.navigationController?.popToRootViewController(animated: false)
                 AppDelegate.share().setWelcome()
                 
             }

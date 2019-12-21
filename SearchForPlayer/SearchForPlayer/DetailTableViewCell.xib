@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DetailTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTableViewCell" rowHeight="345" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="SearchForPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="206.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kzo-1T-7Qg">
+                        <rect key="frame" x="8" y="16" width="352" height="174.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-ID-ZuI">
+                                <rect key="frame" x="0.0" y="0.0" width="352" height="48"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-g0-fkQ">
+                                <rect key="frame" x="0.0" y="63" width="352" height="48.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7de-VR-Xm3">
+                                <rect key="frame" x="0.0" y="126.5" width="352" height="48"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Mma-g0-fkQ" firstAttribute="height" secondItem="HmP-ID-ZuI" secondAttribute="height" id="XsQ-ax-XRt"/>
+                            <constraint firstItem="7de-VR-Xm3" firstAttribute="width" secondItem="HmP-ID-ZuI" secondAttribute="width" id="cJE-O1-W9X"/>
+                            <constraint firstItem="Mma-g0-fkQ" firstAttribute="width" secondItem="HmP-ID-ZuI" secondAttribute="width" id="kwI-gA-xZv"/>
+                            <constraint firstItem="7de-VR-Xm3" firstAttribute="height" secondItem="HmP-ID-ZuI" secondAttribute="height" id="l0G-84-0Gb"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kzo-1T-7Qg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6EK-WY-BGy"/>
+                    <constraint firstAttribute="trailing" secondItem="kzo-1T-7Qg" secondAttribute="trailing" constant="8" id="BWw-sv-d4w"/>
+                    <constraint firstAttribute="bottom" secondItem="kzo-1T-7Qg" secondAttribute="bottom" constant="16" id="T83-gG-FKC"/>
+                    <constraint firstItem="kzo-1T-7Qg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="jWc-ZG-r5l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblText1" destination="HmP-ID-ZuI" id="5Gm-fE-AFm"/>
+                <outlet property="lblText2" destination="Mma-g0-fkQ" id="C19-FC-n8S"/>
+                <outlet property="lblText3" destination="7de-VR-Xm3" id="mW3-t8-lD1"/>
+            </connections>
+            <point key="canvasLocation" x="23.188405797101453" y="36.495535714285715"/>
+        </tableViewCell>
+    </objects>
+</document>

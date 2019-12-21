@@ -60,7 +60,7 @@
                                                 <rect key="frame" x="0.0" y="160" width="414" height="65"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="PNl-mr-vn9" id="ffF-Qa-AaM"/>
                                                 </connections>
@@ -180,7 +180,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LF3-BA-mCA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CuR-B9-jUk"/>
                     <connections>
                         <outlet property="btnSeepass" destination="Wao-zt-ddb" id="UZ5-kV-mTQ"/>
                         <outlet property="txtEmail" destination="Jbl-HV-130" id="d7Y-yW-ulm"/>

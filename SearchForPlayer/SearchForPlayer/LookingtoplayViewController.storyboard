@@ -18,11 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opn-QE-yfC">
-                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDZ-Gc-1eB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDZ-Gc-1eB" userLabel="Viewtop">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nh3-Fw-Czy">
@@ -35,6 +31,9 @@
                                                     <constraint firstAttribute="width" constant="44" id="vYs-2h-QdJ"/>
                                                 </constraints>
                                                 <state key="normal" image="travelr_calendar_left_arrow"/>
+                                                <connections>
+                                                    <action selector="btn_Back:" destination="wTO-Oz-MSn" eventType="touchUpInside" id="s4e-1d-deq"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrH-Oj-l0C">
                                                 <rect key="frame" x="48" y="30" width="279" height="0.0"/>
@@ -43,7 +42,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="VrH-Oj-l0C" firstAttribute="leading" secondItem="nh3-Fw-Czy" secondAttribute="leading" constant="48" id="40a-ls-lE6"/>
                                             <constraint firstItem="VrH-Oj-l0C" firstAttribute="centerY" secondItem="nh3-Fw-Czy" secondAttribute="centerY" id="5qO-ZL-GvW"/>
@@ -79,6 +77,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opn-QE-yfC">
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

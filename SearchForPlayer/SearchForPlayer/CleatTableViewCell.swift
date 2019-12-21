@@ -35,7 +35,7 @@ class CleatTableViewCell: UITableViewCell {
                     }
                     if let cleat = data["cleat"] as? Bool{
                         swCleate.setOn(cleat, animated: true)
-                    }
+                    } 
                 }
             }
         }

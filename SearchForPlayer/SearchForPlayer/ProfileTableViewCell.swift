@@ -43,11 +43,15 @@ class ProfileTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         // Initialization code
     }
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
+    
+//    @IBAction func img_PressAvatar(_ sender: Any) {
+//        self.delegate?.btn_Press(self)
 //    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
     
 }

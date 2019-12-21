@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
         home.tabBarItem = UITabBarItem.init(title: "Home", image: UIImage.init(named: "travelr_tabbar_home_icon"), selectedImage: UIImage.init(named: "travelr_tabbar_home_selected_icon"))
         
         let setting = Utils.viewController(storyboardId: SettingViewController.className, storyboardName: SettingViewController.className) as! SettingViewController
-        setting.tabBarItem = UITabBarItem.init(title: "Setting", image: UIImage.init(named: "travelr_profile_settings_icon"), selectedImage: UIImage.init(named: "travelr_tabbar_profile_selected_icon"))
+        setting.tabBarItem = UITabBarItem.init(title: "Setting", image: UIImage.init(named: "travelr_tabbar_profile_icon"), selectedImage: UIImage.init(named: "travelr_tabbar_profile_selected_icon"))
         self.viewControllers = [home, setting]
         
         

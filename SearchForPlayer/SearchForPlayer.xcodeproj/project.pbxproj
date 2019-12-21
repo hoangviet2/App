@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B02F38B22F878AE0065D575 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B02F38A22F878AE0065D575 /* UserInfo.swift */; };
 		3B46EFA222DB846F00BF28C3 /* HomepagecellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46EFA122DB846F00BF28C3 /* HomepagecellTableViewCell.swift */; };
+		3B654F3922F0946C00350D5D /* MapalertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B654F3822F0946C00350D5D /* MapalertViewController.swift */; };
+		3B654F3B22F0947600350D5D /* MapalertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B654F3A22F0947600350D5D /* MapalertViewController.storyboard */; };
 		3B69BE4D22EC1D940044388D /* HowmanyplayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69BE4B22EC1D940044388D /* HowmanyplayersTableViewCell.swift */; };
 		3B69BE4E22EC1D940044388D /* HowmanyplayersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B69BE4C22EC1D940044388D /* HowmanyplayersTableViewCell.xib */; };
 		3B69BE5422EC419A0044388D /* WhattimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69BE5222EC419A0044388D /* WhattimeTableViewCell.swift */; };
@@ -20,6 +23,18 @@
 		3B7119BC22ED61E2008EBA1D /* BudgetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119BB22ED61E2008EBA1D /* BudgetViewController.storyboard */; };
 		3B7119C022EDD705008EBA1D /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119BE22EDD705008EBA1D /* ProfileTableViewCell.swift */; };
 		3B7119C122EDD705008EBA1D /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119BF22EDD705008EBA1D /* ProfileTableViewCell.xib */; };
+		3B7119C822EE7B80008EBA1D /* HowmanyplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119C722EE7B80008EBA1D /* HowmanyplayerViewController.swift */; };
+		3B7119CA22EE7B8E008EBA1D /* HowmanyplayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119C922EE7B8E008EBA1D /* HowmanyplayerViewController.storyboard */; };
+		3B7119CC22EE8051008EBA1D /* WhattimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119CB22EE8051008EBA1D /* WhattimeViewController.swift */; };
+		3B7119D022EE8081008EBA1D /* WhattimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119CF22EE8081008EBA1D /* WhattimeViewController.storyboard */; };
+		3B7119D422EEDCCB008EBA1D /* BudgetpeiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119D222EEDCCB008EBA1D /* BudgetpeiceTableViewCell.swift */; };
+		3B7119D522EEDCCB008EBA1D /* BudgetpeiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119D322EEDCCB008EBA1D /* BudgetpeiceTableViewCell.xib */; };
+		3B7119DA22EEDED5008EBA1D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119D822EEDED5008EBA1D /* DetailTableViewCell.swift */; };
+		3B7119DB22EEDED5008EBA1D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119D922EEDED5008EBA1D /* DetailTableViewCell.xib */; };
+		3B7119DF22EEDF24008EBA1D /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119DD22EEDF24008EBA1D /* NoticeTableViewCell.swift */; };
+		3B7119E022EEDF24008EBA1D /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119DE22EEDF24008EBA1D /* NoticeTableViewCell.xib */; };
+		3B7119E422F02F77008EBA1D /* WhereTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7119E222F02F77008EBA1D /* WhereTableViewCell.swift */; };
+		3B7119E522F02F77008EBA1D /* WhereTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7119E322F02F77008EBA1D /* WhereTableViewCell.xib */; };
 		3B7FC9FC22EB397300C13887 /* LookingtoplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FC9FB22EB397300C13887 /* LookingtoplayViewController.swift */; };
 		3B7FC9FE22EB397D00C13887 /* LookingtoplayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FC9FD22EB397D00C13887 /* LookingtoplayViewController.storyboard */; };
 		3B8F2A8722E83A93008D912D /* ForgotpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2A8622E83A93008D912D /* ForgotpassViewController.swift */; };
@@ -34,6 +49,8 @@
 		3B9D453D22D372C1001666AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D453C22D372C1001666AA /* Assets.xcassets */; };
 		3B9D454022D372C1001666AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D453E22D372C1001666AA /* LaunchScreen.storyboard */; };
 		3B9D454A22D4EDA8001666AA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D454922D4EDA8001666AA /* SignupViewController.swift */; };
+		3BCD075322F9B5AA007FB94F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD075222F9B5AA007FB94F /* BaseViewController.swift */; };
+		3BCD075522F9B5B5007FB94F /* BaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD075422F9B5B5007FB94F /* BaseViewController.storyboard */; };
 		3BDCCEF922DB3640009A90F3 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCCEF822DB3640009A90F3 /* HomepageViewController.swift */; };
 		3BDCCEFB22DB364A009A90F3 /* HomepageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCCEFA22DB364A009A90F3 /* HomepageViewController.storyboard */; };
 		3BF5D49A22D72D6500152619 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5D49922D72D6500152619 /* SigninViewController.swift */; };
@@ -45,7 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B02F38A22F878AE0065D575 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		3B46EFA122DB846F00BF28C3 /* HomepagecellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepagecellTableViewCell.swift; sourceTree = "<group>"; };
+		3B654F3822F0946C00350D5D /* MapalertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapalertViewController.swift; sourceTree = "<group>"; };
+		3B654F3A22F0947600350D5D /* MapalertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapalertViewController.storyboard; sourceTree = "<group>"; };
 		3B69BE4B22EC1D940044388D /* HowmanyplayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowmanyplayersTableViewCell.swift; sourceTree = "<group>"; };
 		3B69BE4C22EC1D940044388D /* HowmanyplayersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowmanyplayersTableViewCell.xib; sourceTree = "<group>"; };
 		3B69BE5222EC419A0044388D /* WhattimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhattimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +78,18 @@
 		3B7119BB22ED61E2008EBA1D /* BudgetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BudgetViewController.storyboard; sourceTree = "<group>"; };
 		3B7119BE22EDD705008EBA1D /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		3B7119BF22EDD705008EBA1D /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		3B7119C722EE7B80008EBA1D /* HowmanyplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowmanyplayerViewController.swift; sourceTree = "<group>"; };
+		3B7119C922EE7B8E008EBA1D /* HowmanyplayerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowmanyplayerViewController.storyboard; sourceTree = "<group>"; };
+		3B7119CB22EE8051008EBA1D /* WhattimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhattimeViewController.swift; sourceTree = "<group>"; };
+		3B7119CF22EE8081008EBA1D /* WhattimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhattimeViewController.storyboard; sourceTree = "<group>"; };
+		3B7119D222EEDCCB008EBA1D /* BudgetpeiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetpeiceTableViewCell.swift; sourceTree = "<group>"; };
+		3B7119D322EEDCCB008EBA1D /* BudgetpeiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetpeiceTableViewCell.xib; sourceTree = "<group>"; };
+		3B7119D822EEDED5008EBA1D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		3B7119D922EEDED5008EBA1D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		3B7119DD22EEDF24008EBA1D /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		3B7119DE22EEDF24008EBA1D /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		3B7119E222F02F77008EBA1D /* WhereTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereTableViewCell.swift; sourceTree = "<group>"; };
+		3B7119E322F02F77008EBA1D /* WhereTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereTableViewCell.xib; sourceTree = "<group>"; };
 		3B7FC9FB22EB397300C13887 /* LookingtoplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingtoplayViewController.swift; sourceTree = "<group>"; };
 		3B7FC9FD22EB397D00C13887 /* LookingtoplayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LookingtoplayViewController.storyboard; sourceTree = "<group>"; };
 		3B8F2A8622E83A93008D912D /* ForgotpassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpassViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +106,8 @@
 		3B9D453F22D372C1001666AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B9D454122D372C1001666AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B9D454922D4EDA8001666AA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		3BCD075222F9B5AA007FB94F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3BCD075422F9B5B5007FB94F /* BaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseViewController.storyboard; sourceTree = "<group>"; };
 		3BDCCEF822DB3640009A90F3 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		3BDCCEFA22DB364A009A90F3 /* HomepageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomepageViewController.storyboard; sourceTree = "<group>"; };
 		3BF5D49922D72D6500152619 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
@@ -98,12 +132,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B02F38922F878790065D575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B02F38A22F878AE0065D575 /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3B46EFA022DB843B00BF28C3 /* Homepagecell */ = {
 			isa = PBXGroup;
 			children = (
 				3B46EFA122DB846F00BF28C3 /* HomepagecellTableViewCell.swift */,
 			);
 			name = Homepagecell;
+			sourceTree = "<group>";
+		};
+		3B654F3722F0944E00350D5D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3B654F3822F0946C00350D5D /* MapalertViewController.swift */,
+				3B654F3A22F0947600350D5D /* MapalertViewController.storyboard */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 		3B69BE5022EC1DBF0044388D /* Howmanyplayercell */ = {
@@ -145,6 +196,7 @@
 		3B7119B822ED61BF008EBA1D /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				3B7119D122EEDC2F008EBA1D /* Budget Cell */,
 				3B7119B922ED61DB008EBA1D /* BudgetViewController.swift */,
 				3B7119BB22ED61E2008EBA1D /* BudgetViewController.storyboard */,
 			);
@@ -160,9 +212,86 @@
 			name = "profile cell";
 			sourceTree = "<group>";
 		};
+		3B7119C222EE7ABF008EBA1D /* Howmanyplayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119C722EE7B80008EBA1D /* HowmanyplayerViewController.swift */,
+				3B7119C922EE7B8E008EBA1D /* HowmanyplayerViewController.storyboard */,
+			);
+			name = Howmanyplayer;
+			sourceTree = "<group>";
+		};
+		3B7119C422EE7AEB008EBA1D /* When */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119E122F02EE6008EBA1D /* Where and map */,
+				3B7119CB22EE8051008EBA1D /* WhattimeViewController.swift */,
+				3B7119CF22EE8081008EBA1D /* WhattimeViewController.storyboard */,
+			);
+			name = When;
+			sourceTree = "<group>";
+		};
+		3B7119C622EE7B39008EBA1D /* Findplayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119C222EE7ABF008EBA1D /* Howmanyplayer */,
+				3B7119C422EE7AEB008EBA1D /* When */,
+				3B7119B822ED61BF008EBA1D /* Budget */,
+			);
+			name = Findplayer;
+			sourceTree = "<group>";
+		};
+		3B7119D122EEDC2F008EBA1D /* Budget Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119DC22EEDF08008EBA1D /* Notice */,
+				3B7119D722EEDEC0008EBA1D /* Detail */,
+				3B7119D622EEDEB0008EBA1D /* Priece */,
+			);
+			name = "Budget Cell";
+			sourceTree = "<group>";
+		};
+		3B7119D622EEDEB0008EBA1D /* Priece */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119D222EEDCCB008EBA1D /* BudgetpeiceTableViewCell.swift */,
+				3B7119D322EEDCCB008EBA1D /* BudgetpeiceTableViewCell.xib */,
+			);
+			name = Priece;
+			sourceTree = "<group>";
+		};
+		3B7119D722EEDEC0008EBA1D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119D822EEDED5008EBA1D /* DetailTableViewCell.swift */,
+				3B7119D922EEDED5008EBA1D /* DetailTableViewCell.xib */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		3B7119DC22EEDF08008EBA1D /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				3B7119DD22EEDF24008EBA1D /* NoticeTableViewCell.swift */,
+				3B7119DE22EEDF24008EBA1D /* NoticeTableViewCell.xib */,
+			);
+			name = Notice;
+			sourceTree = "<group>";
+		};
+		3B7119E122F02EE6008EBA1D /* Where and map */ = {
+			isa = PBXGroup;
+			children = (
+				3B654F3722F0944E00350D5D /* Alert */,
+				3B7119E222F02F77008EBA1D /* WhereTableViewCell.swift */,
+				3B7119E322F02F77008EBA1D /* WhereTableViewCell.xib */,
+			);
+			name = "Where and map";
+			sourceTree = "<group>";
+		};
 		3B7FC9FA22EB395200C13887 /* Lookingforplayer */ = {
 			isa = PBXGroup;
 			children = (
+				3B7119C622EE7B39008EBA1D /* Findplayer */,
 				3B7FCA0322EC094E00C13887 /* Lookingforplayercell */,
 				3B7FC9FB22EB397300C13887 /* LookingtoplayViewController.swift */,
 				3B7FC9FD22EB397D00C13887 /* LookingtoplayViewController.storyboard */,
@@ -229,13 +358,8 @@
 		3B9D453422D372C0001666AA /* SearchForPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				3B7119B822ED61BF008EBA1D /* Budget */,
-				3B7FC9FA22EB395200C13887 /* Lookingforplayer */,
-				3B8F2A8522E83A6A008D912D /* Forgotpass */,
-				3BDCCEF722DB3626009A90F3 /* Homepage */,
-				3BF5D49D22D9A58A00152619 /* Utilites */,
-				3BF5D49822D72D2C00152619 /* Signin */,
-				3B9D454822D4ED90001666AA /* Signup */,
+				3B02F38922F878790065D575 /* Model */,
+				3BCD075022F9B55D007FB94F /* Viewcontroller */,
 				3B9D453522D372C0001666AA /* AppDelegate.swift */,
 				3B9D453722D372C0001666AA /* ViewController.swift */,
 				3B9D453922D372C0001666AA /* Main.storyboard */,
@@ -255,6 +379,29 @@
 				3BF5D4A022D9A91600152619 /* SignupViewController.storyboard */,
 			);
 			name = Signup;
+			sourceTree = "<group>";
+		};
+		3BCD075022F9B55D007FB94F /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				3BCD075122F9B585007FB94F /* Baseviewcontroller */,
+				3B7FC9FA22EB395200C13887 /* Lookingforplayer */,
+				3B8F2A8522E83A6A008D912D /* Forgotpass */,
+				3BDCCEF722DB3626009A90F3 /* Homepage */,
+				3BF5D49D22D9A58A00152619 /* Utilites */,
+				3BF5D49822D72D2C00152619 /* Signin */,
+				3B9D454822D4ED90001666AA /* Signup */,
+			);
+			name = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		3BCD075122F9B585007FB94F /* Baseviewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				3BCD075222F9B5AA007FB94F /* BaseViewController.swift */,
+				3BCD075422F9B5B5007FB94F /* BaseViewController.storyboard */,
+			);
+			name = Baseviewcontroller;
 			sourceTree = "<group>";
 		};
 		3BDCCEF722DB3626009A90F3 /* Homepage */ = {
@@ -338,6 +485,7 @@
 				TargetAttributes = {
 					3B9D453122D372C0001666AA = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -365,19 +513,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B69BE5522EC419A0044388D /* WhattimeTableViewCell.xib in Resources */,
+				3B7119D522EEDCCB008EBA1D /* BudgetpeiceTableViewCell.xib in Resources */,
 				3B90F11D22DE29BD00EC10C9 /* SettingViewController.storyboard in Resources */,
+				3B7119E522F02F77008EBA1D /* WhereTableViewCell.xib in Resources */,
+				3B7119D022EE8081008EBA1D /* WhattimeViewController.storyboard in Resources */,
 				3BF5D4A122D9A91600152619 /* SignupViewController.storyboard in Resources */,
+				3B7119E022EEDF24008EBA1D /* NoticeTableViewCell.xib in Resources */,
 				3B69BE6022EC459F0044388D /* CleatTableViewCell.xib in Resources */,
+				3B7119DB22EEDED5008EBA1D /* DetailTableViewCell.xib in Resources */,
 				3B69BE4E22EC1D940044388D /* HowmanyplayersTableViewCell.xib in Resources */,
 				3BF5D49C22D72D6F00152619 /* SigninViewController.storyboard in Resources */,
 				3BDCCEFB22DB364A009A90F3 /* HomepageViewController.storyboard in Resources */,
 				3B7FC9FE22EB397D00C13887 /* LookingtoplayViewController.storyboard in Resources */,
 				3B9D454022D372C1001666AA /* LaunchScreen.storyboard in Resources */,
+				3BCD075522F9B5B5007FB94F /* BaseViewController.storyboard in Resources */,
 				3B9D453D22D372C1001666AA /* Assets.xcassets in Resources */,
+				3B654F3B22F0947600350D5D /* MapalertViewController.storyboard in Resources */,
 				3B7119BC22ED61E2008EBA1D /* BudgetViewController.storyboard in Resources */,
 				3B9D453B22D372C0001666AA /* Main.storyboard in Resources */,
 				3B8F2A8922E83A9E008D912D /* ForgotpassViewController.storyboard in Resources */,
 				3B7119C122EDD705008EBA1D /* ProfileTableViewCell.xib in Resources */,
+				3B7119CA22EE7B8E008EBA1D /* HowmanyplayerViewController.storyboard in Resources */,
 				3B69BE5A22EC43CE0044388D /* BudgetTableViewCell.xib in Resources */,
 				3BF5D4A322D9D3CA00152619 /* GoogleService-Info.plist in Resources */,
 			);
@@ -454,18 +610,27 @@
 				3B69BE5422EC419A0044388D /* WhattimeTableViewCell.swift in Sources */,
 				3B7119C022EDD705008EBA1D /* ProfileTableViewCell.swift in Sources */,
 				3BF5D49A22D72D6500152619 /* SigninViewController.swift in Sources */,
+				3BCD075322F9B5AA007FB94F /* BaseViewController.swift in Sources */,
 				3BDCCEF922DB3640009A90F3 /* HomepageViewController.swift in Sources */,
 				3B90F11B22DE229900EC10C9 /* TabBarController.swift in Sources */,
 				3B90F0FB22DDE81100EC10C9 /* SettingViewController.swift in Sources */,
 				3B8F2A8722E83A93008D912D /* ForgotpassViewController.swift in Sources */,
 				3B9D453822D372C0001666AA /* ViewController.swift in Sources */,
+				3B7119DA22EEDED5008EBA1D /* DetailTableViewCell.swift in Sources */,
 				3B90F12222E0DECB00EC10C9 /* SettingTableViewCell.swift in Sources */,
+				3B7119DF22EEDF24008EBA1D /* NoticeTableViewCell.swift in Sources */,
+				3B7119C822EE7B80008EBA1D /* HowmanyplayerViewController.swift in Sources */,
 				3B9D453622D372C0001666AA /* AppDelegate.swift in Sources */,
 				3B7119BA22ED61DB008EBA1D /* BudgetViewController.swift in Sources */,
 				3B69BE5922EC43CE0044388D /* BudgetTableViewCell.swift in Sources */,
+				3B654F3922F0946C00350D5D /* MapalertViewController.swift in Sources */,
+				3B7119E422F02F77008EBA1D /* WhereTableViewCell.swift in Sources */,
+				3B7119D422EEDCCB008EBA1D /* BudgetpeiceTableViewCell.swift in Sources */,
 				3B69BE4D22EC1D940044388D /* HowmanyplayersTableViewCell.swift in Sources */,
 				3B46EFA222DB846F00BF28C3 /* HomepagecellTableViewCell.swift in Sources */,
+				3B7119CC22EE8051008EBA1D /* WhattimeViewController.swift in Sources */,
 				3B9D454A22D4EDA8001666AA /* SignupViewController.swift in Sources */,
+				3B02F38B22F878AE0065D575 /* UserInfo.swift in Sources */,
 				3B69BE5F22EC459F0044388D /* CleatTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +778,7 @@
 			baseConfigurationReference = 46526CCA2F839876771CA8C0 /* Pods-SearchForPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRSZ4688V4;
 				INFOPLIST_FILE = SearchForPlayer/Info.plist;
@@ -622,6 +788,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SearchForPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchForPlayer/SearchForPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -632,6 +800,7 @@
 			baseConfigurationReference = 83814EB6D6045350755099BC /* Pods-SearchForPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRSZ4688V4;
 				INFOPLIST_FILE = SearchForPlayer/Info.plist;
@@ -641,6 +810,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SearchForPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchForPlayer/SearchForPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

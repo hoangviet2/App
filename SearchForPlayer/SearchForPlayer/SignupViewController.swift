@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SignupViewController: UIViewController {
-    
+     
     //Outlet varibles
     @IBOutlet weak var txtFullname: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
@@ -40,32 +40,33 @@ class SignupViewController: UIViewController {
     
     @IBAction func btn_Seepass(_ sender: Any) {
         if btnSeepass.isSelected == false {
-            btnSeepass.isSelected == true
+            btnSeepass.isSelected = true
+            txtPassword.isSecureTextEntry = false
         }else{
-            btnSeepass.isSelected == false
+            txtPassword.isSecureTextEntry = true
+            btnSeepass.isSelected = false
         }
     }
     
     @IBAction func btn_CreateAccount(_ sender: Any) {
-        if txtEmail.text?.isEmpty == true || txtPassword.text?.isEmpty == true || txtFullname.text?.isEmpty == true{
-            print("erro")
-        }else{
-            Auth.auth().createUser(withEmail: txtEmail.text!, password: txtPassword.text!) { authResult, error in
-                if authResult != nil {
-                    if Auth.auth().currentUser?.isEmailVerified == false {
-                        Auth.auth().currentUser?.sendEmailVerification { (error) in
-                        }
-                    }
-                    AppDelegate.share().setupHomeTabBar()
+        if let email = self.txtEmail.text, email.count > 0, let password = txtPassword.text, password.count > 0, let fullname = self.txtFullname.text, fullname.count > 0{
+            AppDelegate.share().createEmailUserByFirebase(email: email, password: password) { (status, auth, error) in
+                if status {
                     
-                }else{
-                    print("create fail")
+                }
+                else if let error = error?.localizedDescription{
+                    let alert = UIAlertController(title: "", message: error, preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Got It", style: UIAlertAction.Style.destructive, handler: { (abc) in
+                        //
+                    })
+                    alert.addAction(ok)
+                    self.present(alert, animated: true, completion: {
+                        //
+                    })
                 }
             }
         }
     }
-    
-
 }
 extension SignupViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

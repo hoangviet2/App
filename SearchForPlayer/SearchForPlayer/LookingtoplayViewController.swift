@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 enum LookingCellType: String {
     case CleatTableViewCell, BudgetTableViewCell, WhattimeTableViewCell, HowmanyplayersTableViewCell, ProfileTableViewCell
@@ -25,9 +26,11 @@ class LookingtoplayViewController: UIViewController {
     var sectionInfos = [[String:Any]]()
     
     //Othervaribles
+    var imagedata:Data!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblTitlepage.text = "Looking for player"
         
         // Configure height for cell
         tableView.estimatedRowHeight = 112
@@ -50,7 +53,7 @@ class LookingtoplayViewController: UIViewController {
         
         var data0 = [String:Any]()
         data0["image"] = "travelr_book_date"
-        data0["name"] = "User1"
+        data0["name"] = Auth.auth().currentUser?.displayName
         
         item0["Object"] = data0
         //
@@ -109,7 +112,11 @@ class LookingtoplayViewController: UIViewController {
         }
         
     }
-
+    
+    @IBAction func btn_Back(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension LookingtoplayViewController : UITableViewDataSource {
@@ -168,11 +175,56 @@ extension LookingtoplayViewController:HowmanyplayersTableViewCelldelegate{
         if let type = cell.cellType{
             if type == LookingCellType.HowmanyplayersTableViewCell{
                 print("cell HowmanyplayersTableViewCell")
-                self.navigationController?.popViewController(animated: true)
+                if let vc = Utils.viewController(storyboardId: HowmanyplayerViewController.className, storyboardName: HowmanyplayerViewController.className) as? HowmanyplayerViewController{
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
     }
     
+}
+extension LookingtoplayViewController:ProfileTableViewCelldelegate{
+    func btn_Press(_ cell: ProfileTableViewCell) {
+        if let Alert:UIAlertController = UIAlertController(title: "Notification", message: "You need to choose camera or Photo to update avatar", preferredStyle: .alert){
+            let photoAct = UIAlertAction(title: "Photo", style: .default) { (UIAlertAction) in
+                let imagePicker = UIImagePickerController()
+                imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+                imagePicker.delegate = self
+                imagePicker.allowsEditing = false
+                self.present(imagePicker, animated: true, completion: nil)
+            }
+            let cameraAct = UIAlertAction(title: "Camera", style: .default) { (UIAlertAction) in
+                if (UIImagePickerController.isSourceTypeAvailable(.camera)){
+                    print("camera")
+                    let imagePicker = UIImagePickerController()
+                    imagePicker.sourceType = UIImagePickerController.SourceType.camera
+                    imagePicker.delegate = self
+                    imagePicker.allowsEditing = false
+                    self.present(imagePicker, animated: true, completion: nil)
+                }
+            }
+            Alert.addAction(cameraAct)
+            Alert.addAction(photoAct)
+            present(Alert, animated: true, completion: nil)
+        }
+    }
+
+
+}
+extension LookingtoplayViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let chooseimage = info[.originalImage] as! UIImage
+        let imagevalue = max(chooseimage.size.width, chooseimage.size.height)
+        if (imagevalue > 3000){
+            imagedata = chooseimage.jpegData(compressionQuality: 0.1)
+        }
+        else if (imagevalue > 2000){
+            imagedata = chooseimage.jpegData(compressionQuality: 0.3)
+        }
+        else{
+            imagedata = chooseimage.jpegData(compressionQuality: 1.0)
+        }
+    }
 }
 
 extension LookingtoplayViewController:WhattimeTableViewCelldelegate{
@@ -180,7 +232,9 @@ extension LookingtoplayViewController:WhattimeTableViewCelldelegate{
         if let type = cell.cellType{
             if type == LookingCellType.WhattimeTableViewCell{
                 print("cell WhattimeTableViewCelldelegate")
-                self.navigationController?.popViewController(animated: true)
+                if let vc = Utils.viewController(storyboardId: WhattimeViewController.className, storyboardName: WhattimeViewController.className) as? WhattimeViewController{
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
     }
@@ -192,7 +246,9 @@ extension LookingtoplayViewController : BudgetTableViewCelldelegate {
         if let type = cell.cellType {
             if type == LookingCellType.BudgetTableViewCell {
                 print("cell BudgetTableViewCell")
-                self.navigationController?.popViewController(animated: true)
+                if let vc = Utils.viewController(storyboardId: BudgetViewController.className, storyboardName: BudgetViewController.className) as? BudgetViewController{
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             }
             
         }
@@ -205,10 +261,14 @@ extension LookingtoplayViewController:CleatTableViewCelldelegate{
             if type == LookingCellType.CleatTableViewCell{
                 print("cell CleatTableViewCelldelegate")
                 self.navigationController?.popViewController(animated: true)
+                
             }
         }
     }
     
 }
+
+
+
 
 
