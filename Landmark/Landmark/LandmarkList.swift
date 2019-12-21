@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List(landmarkData) { landmark in
+        List(landmarkData, id: \.Id) { landmark in
             LandmarkRow(landmark: landmark)
         }
     }
