@@ -22,6 +22,7 @@ struct HomePage: View {
     }
     
     @State var showingProfile = false
+    @EnvironmentObject var userData: UserData
     
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
@@ -49,10 +50,11 @@ struct HomePage: View {
                     Text("See All")
                 }
             }
-            .navigationBarTitle(Text("Featured"))
+            .navigationBarTitle(Text("Vietnam"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost()
+                    .environmentObject(self.userData)
             }
         }
     }
