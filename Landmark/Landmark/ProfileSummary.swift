@@ -1,12 +1,9 @@
-//
-//  ProfileSummary.swift
-//  Landmark
-//
-//  Created by Hoang Viet on 1/19/20.
-//  Copyright © 2020 Hoang Viet. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
 
-import SwiftUI
+Abstract:
+A view that summarizes a profile.
+*/
 
 import SwiftUI
 
@@ -32,21 +29,18 @@ struct ProfileSummary: View {
             
             Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormat)")
             
-            VStack(alignment: .leading){
-                Text("completed badges")
+            VStack(alignment: .leading) {
+                Text("Completed Badges")
                     .font(.headline)
                 ScrollView {
                     HStack {
-                        HikeBadge(name: "Frist Hike")
+                        HikeBadge(name: "First Hike")
                         
-                        HikeBadge(name: "Earth day")
+                        HikeBadge(name: "Earth Day")
                             .hueRotation(Angle(degrees: 90))
-                        
-                        HikeBadge(name: "tenth hike")
+                        HikeBadge(name: "Tenth Hike")
                             .grayscale(0.5)
                             .hueRotation(Angle(degrees: 45))
-                        
-                        
                     }
                 }
                 .frame(height: 140)
@@ -58,7 +52,6 @@ struct ProfileSummary: View {
             
                 HikeView(hike: hikeData[0])
             }
-            
         }
     }
 }

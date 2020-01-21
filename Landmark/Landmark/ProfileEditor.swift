@@ -1,10 +1,9 @@
-//
-//  ProfileEditor.swift
-//  Landmark
-//
-//  Created by Hoang Viet on 1/19/20.
-//  Copyright © 2020 Hoang Viet. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+An editable profile view.
+*/
 
 import SwiftUI
 
@@ -24,9 +23,11 @@ struct ProfileEditor: View {
                 Divider()
                 TextField("Username", text: $profile.username)
             }
+            
             Toggle(isOn: $profile.prefersNotifications) {
                 Text("Enable Notifications")
             }
+            
             VStack(alignment: .leading, spacing: 20) {
                 Text("Seasonal Photo").bold()
                 
@@ -37,10 +38,9 @@ struct ProfileEditor: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
-            
             .padding(.top)
-                
-            VStack(alignment: .leading, spacing: 10) {
+            
+            VStack(alignment: .leading, spacing: 20) {
                 Text("Goal Date").bold()
                 DatePicker(
                     "",
@@ -48,7 +48,6 @@ struct ProfileEditor: View {
                     in: dateRange,
                     displayedComponents: .date)
             }
-                
             .padding(.top)
         }
     }

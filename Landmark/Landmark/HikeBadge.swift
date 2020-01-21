@@ -1,10 +1,9 @@
-//
-//  HikeBadge.swift
-//  Landmark
-//
-//  Created by Hoang Viet on 1/19/20.
-//  Copyright © 2020 Hoang Viet. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that shows a badge for hiking.
+*/
 
 import SwiftUI
 
