@@ -20,7 +20,7 @@ struct LandmarkDetail: View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 300)
+                .frame(height: 200)
             
             CircleImage(image: landmark.image)
                 .offset(x: 0, y: -130)
@@ -55,7 +55,7 @@ struct LandmarkDetail: View {
                 }
                 VStack(){
                     Text(verbatim: landmark.description)
-                    .font(.headline)
+                        .font(.body)
                 }
             }
             .padding()
