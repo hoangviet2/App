@@ -20,7 +20,7 @@ struct LandmarkDetail: View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 200)
+                .frame(height: 300)
             
             CircleImage(image: landmark.image)
                 .offset(x: 0, y: -130)
@@ -45,7 +45,6 @@ struct LandmarkDetail: View {
                         }
                     }
                 }
-                
                 HStack(alignment: .top) {
                     Text(verbatim: landmark.park)
                         .font(.subheadline)
@@ -54,13 +53,18 @@ struct LandmarkDetail: View {
                         .font(.subheadline)
                 }
                 VStack(){
-                    Text(verbatim: landmark.description)
-                        .font(.body)
+                    Text(verbatim: landmark.city)
+                        .font(.subheadline)
                 }
             }
             .padding()
-            
-            Spacer()
+        }
+        ScrollView(){
+            VStack(alignment: .leading, spacing: 20, content: {
+                Text(verbatim: landmark.description)
+                    .font(.body)
+            })
+            .padding()
         }
     }
 }

@@ -54,7 +54,7 @@ struct HomePage: View {
                     Text("See All")
                 }
             }
-            .navigationBarTitle(Text("Vietnam"))
+            .navigationBarTitle(Text("Việt Nam"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
