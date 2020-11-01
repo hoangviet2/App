@@ -11,6 +11,8 @@ import SwiftUI
 struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
+    @State var currentDate = Date()
+        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var landmarkIndex: Int {
         userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
@@ -20,12 +22,12 @@ struct LandmarkDetail: View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 300)
+                .frame(height: UIScreen.screenHeight/3)
             
             CircleImage(image: landmark.image)
                 .offset(x: 0, y: -130)
-                .padding(.bottom, -130)
-            
+                .padding(.bottom,-200)
+            ScrollView(){
             VStack(alignment: .leading) {
                 HStack {
                     Text(verbatim: landmark.name)
@@ -45,28 +47,46 @@ struct LandmarkDetail: View {
                         }
                     }
                 }
-                HStack(alignment: .top) {
-                    Text(verbatim: landmark.park)
+                VStack() {
+                    Text("Giờ địa phương")
                         .font(.subheadline)
-                    Spacer()
-                    Text(verbatim: landmark.state)
+                        .bold()
+                    Text("\(currentDate)")
+                        .onReceive(timer, perform: { input in
+                            self.currentDate = input
+                        })
                         .font(.subheadline)
+                    Text("Thông tin chung")
+                        .font(.subheadline)
+                        .bold()
+                    Text(verbatim: landmark.description)
+                        .font(.body)
+                    Text("Địa hình")
+                        .font(.subheadline)
+                        .bold()
+                    Text(verbatim: landmark.specificpoint)
+                        .font(.body)
+                    Text("Địa danh")
+                        .font(.subheadline)
+                        .bold()
+                    Text(verbatim: landmark.favoriteDestination)
+                        .font(.body)
+                    Text("Đặc sản")
+                        .font(.subheadline)
+                        .bold()
+                    Text(verbatim: landmark.specialFood)
+                        .font(.body)
                 }
-                VStack(){
-                    Text(verbatim: landmark.city)
-                        .font(.subheadline)
-                }
+            }
             }
             .padding()
         }
-        ScrollView(){
-            VStack(alignment: .leading, spacing: 20, content: {
-                Text(verbatim: landmark.description)
-                    .font(.body)
-            })
-            .padding()
-        }
     }
+}
+extension UIScreen{
+   static let screenWidth = UIScreen.main.bounds.size.width
+   static let screenHeight = UIScreen.main.bounds.size.height
+   static let screenSize = UIScreen.main.bounds.size
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {

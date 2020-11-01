@@ -20,6 +20,9 @@ struct Landmark: Hashable, Codable, Identifiable {
     var category: Category
     var isFavorite: Bool
     var isFeatured: Bool
+    var specificpoint:String
+    var specialFood:String
+    var favoriteDestination:String
     var description: String
     var city: String
 
@@ -30,10 +33,9 @@ struct Landmark: Hashable, Codable, Identifiable {
     }
 
     enum Category: String, CaseIterable, Codable, Hashable {
-        case featured = "Đặc sắc"
-        case Plateau = "Cao nguyên"
-        case lakes = "Hồ"
-        case island = "Đảo"
+        case North = "Bắc"
+        case Middle = "Trung"
+        case South = "Nam"
     }
 }
 

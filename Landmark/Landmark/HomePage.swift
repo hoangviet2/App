@@ -25,17 +25,18 @@ struct HomePage: View {
     @EnvironmentObject var userData: UserData
     
     var profileButton: some View {
-        Image(systemName: "person.crop.circle")
-            .imageScale(.large)
-            .accessibility(label: Text("User Profile"))
-            .padding()
-        /*Button(action: { self.showingProfile.toggle() }) {
+//        Image(systemName: "person.crop.circle")
+//            .imageScale(.large)
+//            .accessibility(label: Text("User Profile"))
+//            .padding()
+        Button(action: { self.showingProfile.toggle() }) {
             Image(systemName: "person.crop.circle")
                 .imageScale(.large)
                 .accessibility(label: Text("User Profile"))
                 .padding()
-        }*/
+        }
     }
+
     
     var body: some View {
         NavigationView{
