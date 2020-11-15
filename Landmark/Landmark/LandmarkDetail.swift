@@ -28,56 +28,40 @@ struct LandmarkDetail: View {
                 .offset(x: 0, y: -130)
                 .padding(.bottom,-200)
             ScrollView(){
-            VStack(alignment: .leading) {
-                HStack {
-                    Text(verbatim: landmark.name)
-                        .font(.title)
-                    
-                    Button(action: {
-                        self.userData.landmarks[self.landmarkIndex]
-                            .isFavorite.toggle()
-                    }) {
-                        if self.userData.landmarks[self.landmarkIndex]
-                            .isFavorite {
-                            Image(systemName: "star.fill")
-                                .foregroundColor(Color.yellow)
-                        } else {
-                            Image(systemName: "star")
-                                .foregroundColor(Color.gray)
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(verbatim: landmark.name)
+                            .font(.title)
+                        
+                        Button(action: {
+                            self.userData.landmarks[self.landmarkIndex]
+                                .isFavorite.toggle()
+                        }) {
+                            if self.userData.landmarks[self.landmarkIndex]
+                                .isFavorite {
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(Color.yellow)
+                            } else {
+                                Image(systemName: "star")
+                                    .foregroundColor(Color.gray)
+                            }
                         }
                     }
+                    LandmarkDescription(text: landmark.description, head: "Thông tin Chung")
+                    LandmarkDescription(text: landmark.specificpoint, head: "Đặc điểm địa hình")
+                    LandmarkDescription(text: landmark.specialFood, head: "Đặc sản")
+                    LandmarkDescription(text: landmark.favoriteDestination, head: "Điểm du lịch nổi tiếng")
+                    VStack(alignment: .leading) {
+                        Text("Giờ địa phương")
+                            .font(.headline)
+                            .bold()
+                        Text("\(currentDate)")
+                            .onReceive(timer, perform: { input in
+                                self.currentDate = input
+                            })
+                            .font(.subheadline)
+                    }
                 }
-                VStack() {
-                    Text("Giờ địa phương")
-                        .font(.subheadline)
-                        .bold()
-                    Text("\(currentDate)")
-                        .onReceive(timer, perform: { input in
-                            self.currentDate = input
-                        })
-                        .font(.subheadline)
-                    Text("Thông tin chung")
-                        .font(.subheadline)
-                        .bold()
-                    Text(verbatim: landmark.description)
-                        .font(.body)
-                    Text("Địa hình")
-                        .font(.subheadline)
-                        .bold()
-                    Text(verbatim: landmark.specificpoint)
-                        .font(.body)
-                    Text("Địa danh")
-                        .font(.subheadline)
-                        .bold()
-                    Text(verbatim: landmark.favoriteDestination)
-                        .font(.body)
-                    Text("Đặc sản")
-                        .font(.subheadline)
-                        .bold()
-                    Text(verbatim: landmark.specialFood)
-                        .font(.body)
-                }
-            }
             }
             .padding()
         }
