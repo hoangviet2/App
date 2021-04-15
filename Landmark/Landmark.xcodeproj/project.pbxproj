@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3492CC2568A47D005769E7 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B3492CB2568A47D005769E7 /* weather.json */; };
+		3B3493132568A706005769E7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3493122568A706005769E7 /* Weather.swift */; };
+		3B34931D256905A1005769E7 /* fullimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34931C256905A1005769E7 /* fullimage.swift */; };
 		3B39685E23D3154D0011AC6B /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B39685D23D3154D0011AC6B /* hikeData.json */; };
 		3B39686023D3155F0011AC6B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39685F23D3155F0011AC6B /* Hike.swift */; };
 		3B39686223D3156A0011AC6B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39686123D315690011AC6B /* UserData.swift */; };
@@ -26,6 +29,8 @@
 		3B58881323D57FCC00B7F370 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58881223D57FCC00B7F370 /* HikeBadge.swift */; };
 		3B58881923D5814600B7F370 /* Notre Dame Cathedral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B58881823D5814500B7F370 /* Notre Dame Cathedral.jpg */; };
 		3B58883E23D6A1D000B7F370 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58883D23D6A1D000B7F370 /* profile.swift */; };
+		3B6817412567F211009A7932 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6817402567F211009A7932 /* SectionView.swift */; };
+		3B6817452567F4C7009A7932 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6817442567F4C7009A7932 /* ItemsView.swift */; };
 		3B6DF6E3254C2DBD007AF809 /* HoiAn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B6DF6E2254C2DBD007AF809 /* HoiAn.jpg */; };
 		3B6DF6E6254C2E0B007AF809 /* VinhHaLong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B6DF6E5254C2E0B007AF809 /* VinhHaLong.jpg */; };
 		3B6DF6E9254C2EA3007AF809 /* Sapa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B6DF6E8254C2EA3007AF809 /* Sapa.jpg */; };
@@ -41,6 +46,10 @@
 		3B723B0923BBB2640078926C /* HomePageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B723B0823BBB2640078926C /* HomePageRow.swift */; };
 		3B8301BC23AF0C5300969CFA /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8301BB23AF0C5300969CFA /* LandmarkDetail.swift */; };
 		3B8301BE23AF0CC900969CFA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8301BD23AF0CC900969CFA /* Landmark.swift */; };
+		3B8670EE25680A7D00C82D36 /* JsonFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8670ED25680A7D00C82D36 /* JsonFromURL.swift */; };
+		3BA41A2E2566CB7E0090FB94 /* farvoriteDestination.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BA41A2D2566CB7D0090FB94 /* farvoriteDestination.json */; };
+		3BA41A332566CC320090FB94 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA41A322566CC320090FB94 /* Destination.swift */; };
+		3BA41A362566CFD00090FB94 /* SectionViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA41A352566CFD00090FB94 /* SectionViewRow.swift */; };
 		3BA5B45523ADE40B0017CEFF /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B45423ADE40B0017CEFF /* LandmarkList.swift */; };
 		3BD59F19238D7AFF0042137F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD59F18238D7AFF0042137F /* AppDelegate.swift */; };
 		3BD59F1B238D7AFF0042137F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD59F1A238D7AFF0042137F /* SceneDelegate.swift */; };
@@ -49,12 +58,88 @@
 		3BD59F25238D7B010042137F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD59F23238D7B010042137F /* LaunchScreen.storyboard */; };
 		3BD59F2D238EB7E50042137F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD59F2C238EB7E50042137F /* CircleImage.swift */; };
 		3BD59F2F238EBE5A0042137F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD59F2E238EBE5A0042137F /* MapView.swift */; };
+		3BFE7F322621A448004D949F /* BauTrang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EE92621A3EB004D949F /* BauTrang.jpeg */; };
+		3BFE7F332621A448004D949F /* BenNghieng.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EEA2621A3EC004D949F /* BenNghieng.jpeg */; };
+		3BFE7F342621A448004D949F /* CamPha.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EEB2621A3EE004D949F /* CamPha.jpeg */; };
+		3BFE7F352621A448004D949F /* RachGia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EEC2621A3EF004D949F /* RachGia.jpeg */; };
+		3BFE7F362621A448004D949F /* Nhahatlontphcm.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EED2621A3F0004D949F /* Nhahatlontphcm.jpeg */; };
+		3BFE7F372621A448004D949F /* VanMieuQuocTuGiamHNO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EEE2621A3F1004D949F /* VanMieuQuocTuGiamHNO.jpeg */; };
+		3BFE7F382621A448004D949F /* CauVang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EEF2621A3F2004D949F /* CauVang.jpeg */; };
+		3BFE7F392621A448004D949F /* LungPho.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF02621A3F3004D949F /* LungPho.jpeg */; };
+		3BFE7F3A2621A448004D949F /* Dongco.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF12621A3F4004D949F /* Dongco.jpeg */; };
+		3BFE7F3B2621A448004D949F /* HangMa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF22621A3F5004D949F /* HangMa.jpeg */; };
+		3BFE7F3C2621A448004D949F /* SonTra.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF32621A3F6004D949F /* SonTra.jpeg */; };
+		3BFE7F3D2621A448004D949F /* NamDU.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF42621A3F7004D949F /* NamDU.jpeg */; };
+		3BFE7F3E2621A448004D949F /* HoTayHNO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF52621A3F8004D949F /* HoTayHNO.jpeg */; };
+		3BFE7F3F2621A448004D949F /* CulaoCham.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF62621A3F9004D949F /* CulaoCham.jpeg */; };
+		3BFE7F402621A448004D949F /* DoSonHPH.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF72621A3FA004D949F /* DoSonHPH.jpeg */; };
+		3BFE7F412621A448004D949F /* baodaiHP.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF82621A3FB004D949F /* baodaiHP.jpeg */; };
+		3BFE7F422621A448004D949F /* BaVang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EF92621A3FB004D949F /* BaVang.jpeg */; };
+		3BFE7F432621A448004D949F /* VuonQuocGiaUMinhThuong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFA2621A3FC004D949F /* VuonQuocGiaUMinhThuong.jpeg */; };
+		3BFE7F442621A448004D949F /* CauRong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFB2621A3FD004D949F /* CauRong.jpeg */; };
+		3BFE7F452621A448004D949F /* CauKhoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFC2621A3FE004D949F /* CauKhoa.jpeg */; };
+		3BFE7F462621A448004D949F /* CuLaoCau.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFD2621A3FF004D949F /* CuLaoCau.jpeg */; };
+		3BFE7F472621A448004D949F /* QuanlanQNI.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFE2621A400004D949F /* QuanlanQNI.jpeg */; };
+		3BFE7F482621A448004D949F /* Thiemu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7EFF2621A401004D949F /* Thiemu.jpeg */; };
+		3BFE7F492621A448004D949F /* BaiCatBTH.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F002621A402004D949F /* BaiCatBTH.jpeg */; };
+		3BFE7F4A2621A448004D949F /* HonPhuTuKGI.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F012621A403004D949F /* HonPhuTuKGI.jpeg */; };
+		3BFE7F4B2621A448004D949F /* CauTrangTien.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F022621A404004D949F /* CauTrangTien.jpeg */; };
+		3BFE7F4C2621A448004D949F /* SapaLCA.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F032621A405004D949F /* SapaLCA.jpeg */; };
+		3BFE7F4D2621A448004D949F /* HaTien.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F042621A405004D949F /* HaTien.jpeg */; };
+		3BFE7F4E2621A448004D949F /* ChoBenThanh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F052621A406004D949F /* ChoBenThanh.jpeg */; };
+		3BFE7F4F2621A448004D949F /* Yty.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F062621A407004D949F /* Yty.jpeg */; };
+		3BFE7F502621A448004D949F /* CoThach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F072621A408004D949F /* CoThach.jpeg */; };
+		3BFE7F512621A448004D949F /* HoiAnDNA.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F082621A409004D949F /* HoiAnDNA.jpeg */; };
+		3BFE7F522621A448004D949F /* KeGa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F092621A40B004D949F /* KeGa.jpeg */; };
+		3BFE7F532621A448004D949F /* HalongQNI.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0A2621A40D004D949F /* HalongQNI.jpeg */; };
+		3BFE7F542621A448004D949F /* nuivoi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0B2621A40E004D949F /* nuivoi.jpeg */; };
+		3BFE7F552621A448004D949F /* LangTuDuc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0C2621A410004D949F /* LangTuDuc.jpeg */; };
+		3BFE7F562621A448004D949F /* CatBaHPH.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0D2621A411004D949F /* CatBaHPH.jpeg */; };
+		3BFE7F572621A448004D949F /* BaDinh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0E2621A412004D949F /* BaDinh.jpeg */; };
+		3BFE7F582621A448004D949F /* SongHan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F0F2621A413004D949F /* SongHan.jpeg */; };
+		3BFE7F592621A448004D949F /* LanHa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F102621A415004D949F /* LanHa.jpeg */; };
+		3BFE7F5A2621A448004D949F /* NuiDaDung.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F112621A416004D949F /* NuiDaDung.jpeg */; };
+		3BFE7F5B2621A448004D949F /* DaoHaiTac.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F122621A417004D949F /* DaoHaiTac.jpeg */; };
+		3BFE7F5C2621A448004D949F /* NuiNguBinh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F132621A418004D949F /* NuiNguBinh.jpeg */; };
+		3BFE7F5D2621A448004D949F /* PhuQuy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F142621A41A004D949F /* PhuQuy.jpeg */; };
+		3BFE7F5E2621A448004D949F /* SongHuong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F152621A41C004D949F /* SongHuong.jpeg */; };
+		3BFE7F5F2621A448004D949F /* VQGCB.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F162621A41E004D949F /* VQGCB.jpeg */; };
+		3BFE7F602621A448004D949F /* MYKHe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F172621A420004D949F /* MYKHe.jpeg */; };
+		3BFE7F612621A448004D949F /* CauAnhSao.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F182621A421004D949F /* CauAnhSao.jpeg */; };
+		3BFE7F622621A448004D949F /* HonTreKGI.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F192621A422004D949F /* HonTreKGI.jpeg */; };
+		3BFE7F632621A448004D949F /* PhoBuiVien.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1A2621A424004D949F /* PhoBuiVien.jpeg */; };
+		3BFE7F642621A448004D949F /* NguHanh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1B2621A427004D949F /* NguHanh.jpeg */; };
+		3BFE7F652621A448004D949F /* TaCu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1C2621A428004D949F /* TaCu.jpeg */; };
+		3BFE7F662621A448004D949F /* ChophienBacHa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1D2621A42A004D949F /* ChophienBacHa.jpeg */; };
+		3BFE7F672621A448004D949F /* HoaLo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1E2621A42C004D949F /* HoaLo.jpeg */; };
+		3BFE7F682621A448004D949F /* Hoguom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F1F2621A42E004D949F /* Hoguom.jpeg */; };
+		3BFE7F692621A448004D949F /* BaoTangLichSu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F202621A430004D949F /* BaoTangLichSu.jpeg */; };
+		3BFE7F6A2621A448004D949F /* BenNhaRong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F212621A432004D949F /* BenNhaRong.jpeg */; };
+		3BFE7F6B2621A448004D949F /* COTO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F222621A434004D949F /* COTO.jpeg */; };
+		3BFE7F6C2621A448004D949F /* DaiNoi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F232621A435004D949F /* DaiNoi.jpeg */; };
+		3BFE7F6D2621A448004D949F /* PhuQuocKGI.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F242621A437004D949F /* PhuQuocKGI.jpeg */; };
+		3BFE7F6E2621A448004D949F /* NhaHatLonHNO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F252621A439004D949F /* NhaHatLonHNO.jpeg */; };
+		3BFE7F6F2621A448004D949F /* TraCo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F262621A43A004D949F /* TraCo.jpeg */; };
+		3BFE7F702621A448004D949F /* YenTu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F272621A43B004D949F /* YenTu.jpeg */; };
+		3BFE7F712621A448004D949F /* HoanThanhThangLong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F282621A43C004D949F /* HoanThanhThangLong.jpeg */; };
+		3BFE7F722621A448004D949F /* CaiBau.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F292621A43E004D949F /* CaiBau.jpeg */; };
+		3BFE7F732621A448004D949F /* VinhHaLongQNI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2A2621A43F004D949F /* VinhHaLongQNI.jpg */; };
+		3BFE7F742621A448004D949F /* CuaOng.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2B2621A440004D949F /* CuaOng.jpeg */; };
+		3BFE7F752621A448004D949F /* PhoDiBo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2C2621A441004D949F /* PhoDiBo.jpeg */; };
+		3BFE7F762621A448004D949F /* VanDon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2D2621A442004D949F /* VanDon.jpeg */; };
+		3BFE7F772621A448004D949F /* DeoQuyOlongHo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2E2621A443004D949F /* DeoQuyOlongHo.jpeg */; };
+		3BFE7F782621A448004D949F /* NhaThoLon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F2F2621A445004D949F /* NhaThoLon.jpeg */; };
+		3BFE7F792621A448004D949F /* ChuaTranQuoc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F302621A446004D949F /* ChuaTranQuoc.jpeg */; };
+		3BFE7F7A2621A448004D949F /* LangMinhMang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE7F312621A448004D949F /* LangMinhMang.jpeg */; };
 		3BFF80DC23AC5365005EC191 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF80DB23AC5365005EC191 /* Data.swift */; };
 		3BFF80F823ACA659005EC191 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BFF80EB23ACA639005EC191 /* landmarkData.json */; };
 		3BFF80FD23ACCD36005EC191 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF80FC23ACCD36005EC191 /* LandmarkRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3492CB2568A47D005769E7 /* weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		3B3493122568A706005769E7 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		3B34931C256905A1005769E7 /* fullimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fullimage.swift; sourceTree = "<group>"; };
 		3B39685D23D3154D0011AC6B /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		3B39685F23D3155F0011AC6B /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		3B39686123D315690011AC6B /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -74,6 +159,8 @@
 		3B58881223D57FCC00B7F370 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		3B58881823D5814500B7F370 /* Notre Dame Cathedral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Notre Dame Cathedral.jpg"; sourceTree = "<group>"; };
 		3B58883D23D6A1D000B7F370 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		3B6817402567F211009A7932 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		3B6817442567F4C7009A7932 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		3B6DF6E2254C2DBD007AF809 /* HoiAn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HoiAn.jpg; sourceTree = "<group>"; };
 		3B6DF6E5254C2E0B007AF809 /* VinhHaLong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VinhHaLong.jpg; sourceTree = "<group>"; };
 		3B6DF6E8254C2EA3007AF809 /* Sapa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sapa.jpg; sourceTree = "<group>"; };
@@ -89,6 +176,10 @@
 		3B723B0823BBB2640078926C /* HomePageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRow.swift; sourceTree = "<group>"; };
 		3B8301BB23AF0C5300969CFA /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		3B8301BD23AF0CC900969CFA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		3B8670ED25680A7D00C82D36 /* JsonFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFromURL.swift; sourceTree = "<group>"; };
+		3BA41A2D2566CB7D0090FB94 /* farvoriteDestination.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = farvoriteDestination.json; sourceTree = "<group>"; };
+		3BA41A322566CC320090FB94 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		3BA41A352566CFD00090FB94 /* SectionViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewRow.swift; sourceTree = "<group>"; };
 		3BA5B45423ADE40B0017CEFF /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		3BD59F15238D7AFF0042137F /* Landmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD59F18238D7AFF0042137F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +190,79 @@
 		3BD59F26238D7B010042137F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD59F2C238EB7E50042137F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3BD59F2E238EBE5A0042137F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3BFE7EE92621A3EB004D949F /* BauTrang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BauTrang.jpeg; sourceTree = "<group>"; };
+		3BFE7EEA2621A3EC004D949F /* BenNghieng.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BenNghieng.jpeg; sourceTree = "<group>"; };
+		3BFE7EEB2621A3EE004D949F /* CamPha.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CamPha.jpeg; sourceTree = "<group>"; };
+		3BFE7EEC2621A3EF004D949F /* RachGia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RachGia.jpeg; sourceTree = "<group>"; };
+		3BFE7EED2621A3F0004D949F /* Nhahatlontphcm.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nhahatlontphcm.jpeg; sourceTree = "<group>"; };
+		3BFE7EEE2621A3F1004D949F /* VanMieuQuocTuGiamHNO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VanMieuQuocTuGiamHNO.jpeg; sourceTree = "<group>"; };
+		3BFE7EEF2621A3F2004D949F /* CauVang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauVang.jpeg; sourceTree = "<group>"; };
+		3BFE7EF02621A3F3004D949F /* LungPho.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LungPho.jpeg; sourceTree = "<group>"; };
+		3BFE7EF12621A3F4004D949F /* Dongco.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dongco.jpeg; sourceTree = "<group>"; };
+		3BFE7EF22621A3F5004D949F /* HangMa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HangMa.jpeg; sourceTree = "<group>"; };
+		3BFE7EF32621A3F6004D949F /* SonTra.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SonTra.jpeg; sourceTree = "<group>"; };
+		3BFE7EF42621A3F7004D949F /* NamDU.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NamDU.jpeg; sourceTree = "<group>"; };
+		3BFE7EF52621A3F8004D949F /* HoTayHNO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HoTayHNO.jpeg; sourceTree = "<group>"; };
+		3BFE7EF62621A3F9004D949F /* CulaoCham.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CulaoCham.jpeg; sourceTree = "<group>"; };
+		3BFE7EF72621A3FA004D949F /* DoSonHPH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DoSonHPH.jpeg; sourceTree = "<group>"; };
+		3BFE7EF82621A3FB004D949F /* baodaiHP.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baodaiHP.jpeg; sourceTree = "<group>"; };
+		3BFE7EF92621A3FB004D949F /* BaVang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaVang.jpeg; sourceTree = "<group>"; };
+		3BFE7EFA2621A3FC004D949F /* VuonQuocGiaUMinhThuong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VuonQuocGiaUMinhThuong.jpeg; sourceTree = "<group>"; };
+		3BFE7EFB2621A3FD004D949F /* CauRong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauRong.jpeg; sourceTree = "<group>"; };
+		3BFE7EFC2621A3FE004D949F /* CauKhoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauKhoa.jpeg; sourceTree = "<group>"; };
+		3BFE7EFD2621A3FF004D949F /* CuLaoCau.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CuLaoCau.jpeg; sourceTree = "<group>"; };
+		3BFE7EFE2621A400004D949F /* QuanlanQNI.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QuanlanQNI.jpeg; sourceTree = "<group>"; };
+		3BFE7EFF2621A401004D949F /* Thiemu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thiemu.jpeg; sourceTree = "<group>"; };
+		3BFE7F002621A402004D949F /* BaiCatBTH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaiCatBTH.jpeg; sourceTree = "<group>"; };
+		3BFE7F012621A403004D949F /* HonPhuTuKGI.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HonPhuTuKGI.jpeg; sourceTree = "<group>"; };
+		3BFE7F022621A404004D949F /* CauTrangTien.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauTrangTien.jpeg; sourceTree = "<group>"; };
+		3BFE7F032621A405004D949F /* SapaLCA.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SapaLCA.jpeg; sourceTree = "<group>"; };
+		3BFE7F042621A405004D949F /* HaTien.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HaTien.jpeg; sourceTree = "<group>"; };
+		3BFE7F052621A406004D949F /* ChoBenThanh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChoBenThanh.jpeg; sourceTree = "<group>"; };
+		3BFE7F062621A407004D949F /* Yty.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yty.jpeg; sourceTree = "<group>"; };
+		3BFE7F072621A408004D949F /* CoThach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CoThach.jpeg; sourceTree = "<group>"; };
+		3BFE7F082621A409004D949F /* HoiAnDNA.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HoiAnDNA.jpeg; sourceTree = "<group>"; };
+		3BFE7F092621A40B004D949F /* KeGa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KeGa.jpeg; sourceTree = "<group>"; };
+		3BFE7F0A2621A40D004D949F /* HalongQNI.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HalongQNI.jpeg; sourceTree = "<group>"; };
+		3BFE7F0B2621A40E004D949F /* nuivoi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nuivoi.jpeg; sourceTree = "<group>"; };
+		3BFE7F0C2621A410004D949F /* LangTuDuc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LangTuDuc.jpeg; sourceTree = "<group>"; };
+		3BFE7F0D2621A411004D949F /* CatBaHPH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CatBaHPH.jpeg; sourceTree = "<group>"; };
+		3BFE7F0E2621A412004D949F /* BaDinh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaDinh.jpeg; sourceTree = "<group>"; };
+		3BFE7F0F2621A413004D949F /* SongHan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SongHan.jpeg; sourceTree = "<group>"; };
+		3BFE7F102621A415004D949F /* LanHa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LanHa.jpeg; sourceTree = "<group>"; };
+		3BFE7F112621A416004D949F /* NuiDaDung.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NuiDaDung.jpeg; sourceTree = "<group>"; };
+		3BFE7F122621A417004D949F /* DaoHaiTac.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DaoHaiTac.jpeg; sourceTree = "<group>"; };
+		3BFE7F132621A418004D949F /* NuiNguBinh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NuiNguBinh.jpeg; sourceTree = "<group>"; };
+		3BFE7F142621A41A004D949F /* PhuQuy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhuQuy.jpeg; sourceTree = "<group>"; };
+		3BFE7F152621A41C004D949F /* SongHuong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SongHuong.jpeg; sourceTree = "<group>"; };
+		3BFE7F162621A41E004D949F /* VQGCB.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VQGCB.jpeg; sourceTree = "<group>"; };
+		3BFE7F172621A420004D949F /* MYKHe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MYKHe.jpeg; sourceTree = "<group>"; };
+		3BFE7F182621A421004D949F /* CauAnhSao.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauAnhSao.jpeg; sourceTree = "<group>"; };
+		3BFE7F192621A422004D949F /* HonTreKGI.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HonTreKGI.jpeg; sourceTree = "<group>"; };
+		3BFE7F1A2621A424004D949F /* PhoBuiVien.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhoBuiVien.jpeg; sourceTree = "<group>"; };
+		3BFE7F1B2621A427004D949F /* NguHanh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NguHanh.jpeg; sourceTree = "<group>"; };
+		3BFE7F1C2621A428004D949F /* TaCu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TaCu.jpeg; sourceTree = "<group>"; };
+		3BFE7F1D2621A42A004D949F /* ChophienBacHa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChophienBacHa.jpeg; sourceTree = "<group>"; };
+		3BFE7F1E2621A42C004D949F /* HoaLo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HoaLo.jpeg; sourceTree = "<group>"; };
+		3BFE7F1F2621A42E004D949F /* Hoguom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoguom.jpeg; sourceTree = "<group>"; };
+		3BFE7F202621A430004D949F /* BaoTangLichSu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaoTangLichSu.jpeg; sourceTree = "<group>"; };
+		3BFE7F212621A432004D949F /* BenNhaRong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BenNhaRong.jpeg; sourceTree = "<group>"; };
+		3BFE7F222621A434004D949F /* COTO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = COTO.jpeg; sourceTree = "<group>"; };
+		3BFE7F232621A435004D949F /* DaiNoi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DaiNoi.jpeg; sourceTree = "<group>"; };
+		3BFE7F242621A437004D949F /* PhuQuocKGI.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhuQuocKGI.jpeg; sourceTree = "<group>"; };
+		3BFE7F252621A439004D949F /* NhaHatLonHNO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NhaHatLonHNO.jpeg; sourceTree = "<group>"; };
+		3BFE7F262621A43A004D949F /* TraCo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TraCo.jpeg; sourceTree = "<group>"; };
+		3BFE7F272621A43B004D949F /* YenTu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YenTu.jpeg; sourceTree = "<group>"; };
+		3BFE7F282621A43C004D949F /* HoanThanhThangLong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HoanThanhThangLong.jpeg; sourceTree = "<group>"; };
+		3BFE7F292621A43E004D949F /* CaiBau.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CaiBau.jpeg; sourceTree = "<group>"; };
+		3BFE7F2A2621A43F004D949F /* VinhHaLongQNI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VinhHaLongQNI.jpg; sourceTree = "<group>"; };
+		3BFE7F2B2621A440004D949F /* CuaOng.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CuaOng.jpeg; sourceTree = "<group>"; };
+		3BFE7F2C2621A441004D949F /* PhoDiBo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhoDiBo.jpeg; sourceTree = "<group>"; };
+		3BFE7F2D2621A442004D949F /* VanDon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VanDon.jpeg; sourceTree = "<group>"; };
+		3BFE7F2E2621A443004D949F /* DeoQuyOlongHo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeoQuyOlongHo.jpeg; sourceTree = "<group>"; };
+		3BFE7F2F2621A445004D949F /* NhaThoLon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NhaThoLon.jpeg; sourceTree = "<group>"; };
+		3BFE7F302621A446004D949F /* ChuaTranQuoc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChuaTranQuoc.jpeg; sourceTree = "<group>"; };
+		3BFE7F312621A448004D949F /* LangMinhMang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LangMinhMang.jpeg; sourceTree = "<group>"; };
 		3BFF80DB23AC5365005EC191 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3BFF80EB23ACA639005EC191 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		3BFF80FC23ACCD36005EC191 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
@@ -127,6 +291,7 @@
 				3B39687023D318830011AC6B /* HikeGraph.swift */,
 				3B39687223D3188E0011AC6B /* RotatedBadgeSymbol.swift */,
 				3BD59F2C238EB7E50042137F /* CircleImage.swift */,
+				3B34931C256905A1005769E7 /* fullimage.swift */,
 			);
 			name = "Supporting view";
 			sourceTree = "<group>";
@@ -170,6 +335,14 @@
 			name = Profile;
 			sourceTree = "<group>";
 		};
+		3B6817432567F496009A7932 /* ItemsView */ = {
+			isa = PBXGroup;
+			children = (
+				3B6817442567F4C7009A7932 /* ItemsView.swift */,
+			);
+			name = ItemsView;
+			sourceTree = "<group>";
+		};
 		3B723B0A23BBB26D0078926C /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +350,16 @@
 				3B723B0823BBB2640078926C /* HomePageRow.swift */,
 			);
 			name = "Home Page";
+			sourceTree = "<group>";
+		};
+		3BA41A292566C9950090FB94 /* SectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				3B6817432567F496009A7932 /* ItemsView */,
+				3BA41A352566CFD00090FB94 /* SectionViewRow.swift */,
+				3B6817402567F211009A7932 /* SectionView.swift */,
+			);
+			name = SectionPage;
 			sourceTree = "<group>";
 		};
 		3BD59F0C238D7AFF0042137F = {
@@ -198,6 +381,7 @@
 		3BD59F17238D7AFF0042137F /* Landmark */ = {
 			isa = PBXGroup;
 			children = (
+				3BA41A292566C9950090FB94 /* SectionPage */,
 				3B58880B23D57E0300B7F370 /* Profile */,
 				3B39687823D35B4B0011AC6B /* Delegate */,
 				3B39687723D35B230011AC6B /* Landmarks */,
@@ -230,7 +414,10 @@
 				3B39685F23D3155F0011AC6B /* Hike.swift */,
 				3B58883D23D6A1D000B7F370 /* profile.swift */,
 				3BFF80DB23AC5365005EC191 /* Data.swift */,
+				3B8670ED25680A7D00C82D36 /* JsonFromURL.swift */,
 				3B8301BD23AF0CC900969CFA /* Landmark.swift */,
+				3BA41A322566CC320090FB94 /* Destination.swift */,
+				3B3493122568A706005769E7 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,11 +425,86 @@
 		3BFF80E123ACA58F005EC191 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3BFE7F2F2621A445004D949F /* NhaThoLon.jpeg */,
+				3BFE7EF12621A3F4004D949F /* Dongco.jpeg */,
+				3BFE7EF82621A3FB004D949F /* baodaiHP.jpeg */,
+				3BFE7F202621A430004D949F /* BaoTangLichSu.jpeg */,
+				3BFE7EF92621A3FB004D949F /* BaVang.jpeg */,
+				3BFE7F212621A432004D949F /* BenNhaRong.jpeg */,
+				3BFE7F052621A406004D949F /* ChoBenThanh.jpeg */,
+				3BFE7EEA2621A3EC004D949F /* BenNghieng.jpeg */,
+				3BFE7F292621A43E004D949F /* CaiBau.jpeg */,
+				3BFE7F282621A43C004D949F /* HoanThanhThangLong.jpeg */,
+				3BFE7EEB2621A3EE004D949F /* CamPha.jpeg */,
+				3BFE7F0D2621A411004D949F /* CatBaHPH.jpeg */,
+				3BFE7F182621A421004D949F /* CauAnhSao.jpeg */,
+				3BFE7EFC2621A3FE004D949F /* CauKhoa.jpeg */,
+				3BFE7EFB2621A3FD004D949F /* CauRong.jpeg */,
+				3BFE7EEF2621A3F2004D949F /* CauVang.jpeg */,
+				3BFE7F1D2621A42A004D949F /* ChophienBacHa.jpeg */,
+				3BFE7F302621A446004D949F /* ChuaTranQuoc.jpeg */,
+				3BFE7F072621A408004D949F /* CoThach.jpeg */,
+				3BFE7F222621A434004D949F /* COTO.jpeg */,
+				3BFE7EFD2621A3FF004D949F /* CuLaoCau.jpeg */,
+				3BFE7F2B2621A440004D949F /* CuaOng.jpeg */,
+				3BFE7EF62621A3F9004D949F /* CulaoCham.jpeg */,
+				3BFE7F232621A435004D949F /* DaiNoi.jpeg */,
+				3BFE7F122621A417004D949F /* DaoHaiTac.jpeg */,
+				3BFE7F2E2621A443004D949F /* DeoQuyOlongHo.jpeg */,
+				3BFE7EF72621A3FA004D949F /* DoSonHPH.jpeg */,
+				3BFE7EE92621A3EB004D949F /* BauTrang.jpeg */,
+				3BFE7F062621A407004D949F /* Yty.jpeg */,
+				3BFE7F2A2621A43F004D949F /* VinhHaLongQNI.jpg */,
+				3BFE7F0A2621A40D004D949F /* HalongQNI.jpeg */,
+				3BFE7F042621A405004D949F /* HaTien.jpeg */,
+				3BFE7F1E2621A42C004D949F /* HoaLo.jpeg */,
+				3BFE7F1F2621A42E004D949F /* Hoguom.jpeg */,
+				3BFE7F082621A409004D949F /* HoiAnDNA.jpeg */,
+				3BFE7F012621A403004D949F /* HonPhuTuKGI.jpeg */,
+				3BFE7F192621A422004D949F /* HonTreKGI.jpeg */,
+				3BFE7EF52621A3F8004D949F /* HoTayHNO.jpeg */,
+				3BFE7F022621A404004D949F /* CauTrangTien.jpeg */,
+				3BFE7F092621A40B004D949F /* KeGa.jpeg */,
+				3BFE7F312621A448004D949F /* LangMinhMang.jpeg */,
+				3BFE7F0C2621A410004D949F /* LangTuDuc.jpeg */,
+				3BFE7F102621A415004D949F /* LanHa.jpeg */,
+				3BFE7EF02621A3F3004D949F /* LungPho.jpeg */,
+				3BFE7F002621A402004D949F /* BaiCatBTH.jpeg */,
+				3BFE7F172621A420004D949F /* MYKHe.jpeg */,
+				3BFE7EF42621A3F7004D949F /* NamDU.jpeg */,
+				3BFE7F1B2621A427004D949F /* NguHanh.jpeg */,
+				3BFE7F252621A439004D949F /* NhaHatLonHNO.jpeg */,
+				3BFE7EED2621A3F0004D949F /* Nhahatlontphcm.jpeg */,
+				3BFE7F112621A416004D949F /* NuiDaDung.jpeg */,
+				3BFE7F0B2621A40E004D949F /* nuivoi.jpeg */,
+				3BFE7F2C2621A441004D949F /* PhoDiBo.jpeg */,
+				3BFE7F1A2621A424004D949F /* PhoBuiVien.jpeg */,
+				3BFE7EF22621A3F5004D949F /* HangMa.jpeg */,
+				3BFE7F242621A437004D949F /* PhuQuocKGI.jpeg */,
+				3BFE7F142621A41A004D949F /* PhuQuy.jpeg */,
+				3BFE7F0E2621A412004D949F /* BaDinh.jpeg */,
+				3BFE7EFE2621A400004D949F /* QuanlanQNI.jpeg */,
+				3BFE7EEC2621A3EF004D949F /* RachGia.jpeg */,
+				3BFE7F032621A405004D949F /* SapaLCA.jpeg */,
+				3BFE7F0F2621A413004D949F /* SongHan.jpeg */,
+				3BFE7F152621A41C004D949F /* SongHuong.jpeg */,
+				3BFE7EF32621A3F6004D949F /* SonTra.jpeg */,
+				3BFE7F1C2621A428004D949F /* TaCu.jpeg */,
+				3BFE7EFF2621A401004D949F /* Thiemu.jpeg */,
+				3BFE7F132621A418004D949F /* NuiNguBinh.jpeg */,
+				3BFE7F262621A43A004D949F /* TraCo.jpeg */,
+				3BFE7EEE2621A3F1004D949F /* VanMieuQuocTuGiamHNO.jpeg */,
+				3BFE7F2D2621A442004D949F /* VanDon.jpeg */,
+				3BFE7F162621A41E004D949F /* VQGCB.jpeg */,
+				3BFE7EFA2621A3FC004D949F /* VuonQuocGiaUMinhThuong.jpeg */,
+				3BFE7F272621A43B004D949F /* YenTu.jpeg */,
 				3BFF80EB23ACA639005EC191 /* landmarkData.json */,
+				3BA41A2D2566CB7D0090FB94 /* farvoriteDestination.json */,
+				3B39685D23D3154D0011AC6B /* hikeData.json */,
+				3B3492CB2568A47D005769E7 /* weather.json */,
 				3B6DF6E8254C2EA3007AF809 /* Sapa.jpg */,
 				3B6DF700254C2FC8007AF809 /* PhuQuoc.jpg */,
 				3B6DF6E2254C2DBD007AF809 /* HoiAn.jpg */,
-				3B39685D23D3154D0011AC6B /* hikeData.json */,
 				3B6DF6E5254C2E0B007AF809 /* VinhHaLong.jpg */,
 				3B6DF6FA254C2F8B007AF809 /* CuChi.jpg */,
 				3B6DF6FD254C2FA7007AF809 /* CatBa.jpg */,
@@ -314,23 +576,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFE7F712621A448004D949F /* HoanThanhThangLong.jpeg in Resources */,
+				3BFE7F362621A448004D949F /* Nhahatlontphcm.jpeg in Resources */,
+				3BFE7F532621A448004D949F /* HalongQNI.jpeg in Resources */,
+				3BFE7F752621A448004D949F /* PhoDiBo.jpeg in Resources */,
+				3BFE7F622621A448004D949F /* HonTreKGI.jpeg in Resources */,
 				3B6DF6F8254C2F6B007AF809 /* ThienMu.jpg in Resources */,
+				3BFE7F3F2621A448004D949F /* CulaoCham.jpeg in Resources */,
+				3BA41A2E2566CB7E0090FB94 /* farvoriteDestination.json in Resources */,
+				3BFE7F632621A448004D949F /* PhoBuiVien.jpeg in Resources */,
+				3BFE7F722621A448004D949F /* CaiBau.jpeg in Resources */,
+				3BFE7F612621A448004D949F /* CauAnhSao.jpeg in Resources */,
+				3BFE7F3E2621A448004D949F /* HoTayHNO.jpeg in Resources */,
 				3B39685E23D3154D0011AC6B /* hikeData.json in Resources */,
+				3BFE7F4F2621A448004D949F /* Yty.jpeg in Resources */,
+				3BFE7F5B2621A448004D949F /* DaoHaiTac.jpeg in Resources */,
+				3BFE7F4E2621A448004D949F /* ChoBenThanh.jpeg in Resources */,
 				3BD59F25238D7B010042137F /* LaunchScreen.storyboard in Resources */,
 				3B6DF6FB254C2F8B007AF809 /* CuChi.jpg in Resources */,
+				3BFE7F6F2621A448004D949F /* TraCo.jpeg in Resources */,
 				3B6DF6F2254C2F2A007AF809 /* QuocTuGiam.jpg in Resources */,
+				3BFE7F792621A448004D949F /* ChuaTranQuoc.jpeg in Resources */,
+				3BFE7F5A2621A448004D949F /* NuiDaDung.jpeg in Resources */,
+				3BFE7F762621A448004D949F /* VanDon.jpeg in Resources */,
+				3BFE7F472621A448004D949F /* QuanlanQNI.jpeg in Resources */,
+				3BFE7F6D2621A448004D949F /* PhuQuocKGI.jpeg in Resources */,
 				3B6DF6E9254C2EA3007AF809 /* Sapa.jpg in Resources */,
+				3BFE7F702621A448004D949F /* YenTu.jpeg in Resources */,
+				3BFE7F662621A448004D949F /* ChophienBacHa.jpeg in Resources */,
+				3BFE7F522621A448004D949F /* KeGa.jpeg in Resources */,
+				3BFE7F482621A448004D949F /* Thiemu.jpeg in Resources */,
+				3BFE7F572621A448004D949F /* BaDinh.jpeg in Resources */,
+				3BFE7F332621A448004D949F /* BenNghieng.jpeg in Resources */,
 				3BD59F22238D7B010042137F /* Preview Assets.xcassets in Resources */,
+				3BFE7F742621A448004D949F /* CuaOng.jpeg in Resources */,
+				3BFE7F652621A448004D949F /* TaCu.jpeg in Resources */,
 				3B6DF6F5254C2F4E007AF809 /* NhaTrang.jpg in Resources */,
+				3BFE7F782621A448004D949F /* NhaThoLon.jpeg in Resources */,
+				3BFE7F6B2621A448004D949F /* COTO.jpeg in Resources */,
+				3BFE7F322621A448004D949F /* BauTrang.jpeg in Resources */,
 				3B6DF6EF254C2F03007AF809 /* MuiNe.jpg in Resources */,
+				3BFE7F392621A448004D949F /* LungPho.jpeg in Resources */,
+				3BFE7F732621A448004D949F /* VinhHaLongQNI.jpg in Resources */,
+				3BFE7F3D2621A448004D949F /* NamDU.jpeg in Resources */,
+				3BFE7F402621A448004D949F /* DoSonHPH.jpeg in Resources */,
+				3BFE7F3C2621A448004D949F /* SonTra.jpeg in Resources */,
+				3BFE7F542621A448004D949F /* nuivoi.jpeg in Resources */,
 				3B58881923D5814600B7F370 /* Notre Dame Cathedral.jpg in Resources */,
 				3B6DF6E3254C2DBD007AF809 /* HoiAn.jpg in Resources */,
+				3BFE7F4B2621A448004D949F /* CauTrangTien.jpeg in Resources */,
+				3BFE7F642621A448004D949F /* NguHanh.jpeg in Resources */,
+				3BFE7F382621A448004D949F /* CauVang.jpeg in Resources */,
+				3BFE7F552621A448004D949F /* LangTuDuc.jpeg in Resources */,
+				3BFE7F492621A448004D949F /* BaiCatBTH.jpeg in Resources */,
 				3BFF80F823ACA659005EC191 /* landmarkData.json in Resources */,
 				3B6DF701254C2FC8007AF809 /* PhuQuoc.jpg in Resources */,
+				3BFE7F6C2621A448004D949F /* DaiNoi.jpeg in Resources */,
+				3BFE7F512621A448004D949F /* HoiAnDNA.jpeg in Resources */,
+				3BFE7F452621A448004D949F /* CauKhoa.jpeg in Resources */,
+				3BFE7F372621A448004D949F /* VanMieuQuocTuGiamHNO.jpeg in Resources */,
+				3BFE7F692621A448004D949F /* BaoTangLichSu.jpeg in Resources */,
+				3BFE7F682621A448004D949F /* Hoguom.jpeg in Resources */,
+				3BFE7F502621A448004D949F /* CoThach.jpeg in Resources */,
+				3BFE7F6A2621A448004D949F /* BenNhaRong.jpeg in Resources */,
+				3B3492CC2568A47D005769E7 /* weather.json in Resources */,
+				3BFE7F412621A448004D949F /* baodaiHP.jpeg in Resources */,
+				3BFE7F342621A448004D949F /* CamPha.jpeg in Resources */,
+				3BFE7F562621A448004D949F /* CatBaHPH.jpeg in Resources */,
 				3BD59F1F238D7B010042137F /* Assets.xcassets in Resources */,
+				3BFE7F5F2621A448004D949F /* VQGCB.jpeg in Resources */,
+				3BFE7F442621A448004D949F /* CauRong.jpeg in Resources */,
 				3B6DF6FE254C2FA7007AF809 /* CatBa.jpg in Resources */,
+				3BFE7F5D2621A448004D949F /* PhuQuy.jpeg in Resources */,
+				3BFE7F602621A448004D949F /* MYKHe.jpeg in Resources */,
+				3BFE7F582621A448004D949F /* SongHan.jpeg in Resources */,
+				3BFE7F6E2621A448004D949F /* NhaHatLonHNO.jpeg in Resources */,
+				3BFE7F5C2621A448004D949F /* NuiNguBinh.jpeg in Resources */,
+				3BFE7F422621A448004D949F /* BaVang.jpeg in Resources */,
+				3BFE7F592621A448004D949F /* LanHa.jpeg in Resources */,
+				3BFE7F772621A448004D949F /* DeoQuyOlongHo.jpeg in Resources */,
+				3BFE7F3B2621A448004D949F /* HangMa.jpeg in Resources */,
+				3BFE7F672621A448004D949F /* HoaLo.jpeg in Resources */,
+				3BFE7F4C2621A448004D949F /* SapaLCA.jpeg in Resources */,
+				3BFE7F4D2621A448004D949F /* HaTien.jpeg in Resources */,
+				3BFE7F432621A448004D949F /* VuonQuocGiaUMinhThuong.jpeg in Resources */,
+				3BFE7F3A2621A448004D949F /* Dongco.jpeg in Resources */,
+				3BFE7F5E2621A448004D949F /* SongHuong.jpeg in Resources */,
+				3BFE7F462621A448004D949F /* CuLaoCau.jpeg in Resources */,
+				3BFE7F4A2621A448004D949F /* HonPhuTuKGI.jpeg in Resources */,
 				3B6DF6E6254C2E0B007AF809 /* VinhHaLong.jpg in Resources */,
+				3BFE7F352621A448004D949F /* RachGia.jpeg in Resources */,
 				3B6DF6EC254C2EDE007AF809 /* HoHoanKiem.jpg in Resources */,
+				3BFE7F7A2621A448004D949F /* LangMinhMang.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,18 +679,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B39686223D3156A0011AC6B /* UserData.swift in Sources */,
+				3BA41A332566CC320090FB94 /* Destination.swift in Sources */,
 				3BFF80DC23AC5365005EC191 /* Data.swift in Sources */,
 				3BD59F19238D7AFF0042137F /* AppDelegate.swift in Sources */,
 				3B58880D23D57F1F00B7F370 /* ProfileHost.swift in Sources */,
 				3B58881123D57F5800B7F370 /* ProfileEditor.swift in Sources */,
 				3BD59F2D238EB7E50042137F /* CircleImage.swift in Sources */,
+				3B6817452567F4C7009A7932 /* ItemsView.swift in Sources */,
+				3B8670EE25680A7D00C82D36 /* JsonFromURL.swift in Sources */,
 				3B39687523D318BB0011AC6B /* HexagonParameters.swift in Sources */,
 				3BD59F2F238EBE5A0042137F /* MapView.swift in Sources */,
+				3BA41A362566CFD00090FB94 /* SectionViewRow.swift in Sources */,
 				3B39687323D3188E0011AC6B /* RotatedBadgeSymbol.swift in Sources */,
 				3B8301BC23AF0C5300969CFA /* LandmarkDetail.swift in Sources */,
 				3B444E962559916D00AA889D /* LandmarkDescription.swift in Sources */,
+				3B6817412567F211009A7932 /* SectionView.swift in Sources */,
 				3B723B0723BBB0800078926C /* HomePage.swift in Sources */,
 				3B39686023D3155F0011AC6B /* Hike.swift in Sources */,
+				3B3493132568A706005769E7 /* Weather.swift in Sources */,
 				3B8301BE23AF0CC900969CFA /* Landmark.swift in Sources */,
 				3B39686923D318610011AC6B /* Badge.swift in Sources */,
 				3B39686423D316270011AC6B /* HikeView.swift in Sources */,
@@ -364,6 +707,7 @@
 				3B723B0923BBB2640078926C /* HomePageRow.swift in Sources */,
 				3BFF80FD23ACCD36005EC191 /* LandmarkRow.swift in Sources */,
 				3B58881323D57FCC00B7F370 /* HikeBadge.swift in Sources */,
+				3B34931D256905A1005769E7 /* fullimage.swift in Sources */,
 				3B39686623D316320011AC6B /* HikeDetail.swift in Sources */,
 				3B58880F23D57F3400B7F370 /* ProfileSummary.swift in Sources */,
 				3B58883E23D6A1D000B7F370 /* profile.swift in Sources */,

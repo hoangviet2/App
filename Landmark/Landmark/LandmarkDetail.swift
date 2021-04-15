@@ -13,7 +13,12 @@ struct LandmarkDetail: View {
     var landmark: Landmark
     @State var currentDate = Date()
         let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+    var destinations: [String: [Destination]] {
+        Dictionary(
+            grouping: landmarkDestination,
+            by: { $0.beside.rawValue }
+        )
+    }
     var landmarkIndex: Int {
         userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
@@ -62,6 +67,7 @@ struct LandmarkDetail: View {
                             .font(.subheadline)
                     }
                 }
+                SectionViewRow(categoryName: landmark.name, itemDes: self.destinations[landmark.code]!)
             }
             .padding()
         }

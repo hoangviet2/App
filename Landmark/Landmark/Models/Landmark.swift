@@ -25,6 +25,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var favoriteDestination:String
     var description: String
     var city: String
+    var code:String
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
